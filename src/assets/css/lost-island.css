@@ -1,0 +1,9 @@
+/* assets/css/lost-island.css */
+@font-face {
+  font-family: Lost Island;
+  src: url("../font/Lost-Island.ttf") format("truetype");
+}
+
+.bg-image {
+  font-family: Lost Island;
+}
