@@ -23,5 +23,19 @@
 
 .bg-image2 {
   background-image: url("./assets/img/background2.png");
+  width: 100%;
   background-size: cover;
+}
+
+.bg-image3 {
+  background-image: url("./assets/img/beach.png");
+  width: 100%;
+  background-size: cover;
+}
+
+.bg-image4 {
+  background-image: url("./assets/img/Group\ 2221.png");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
