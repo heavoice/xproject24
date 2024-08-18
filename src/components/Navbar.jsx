@@ -6,7 +6,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between sm:justify-between md:justify-around lg:justify-around xl:justify-around items-center px-4 bg-[#F2C48D] text-white z-20">
+    <div className="fixed top-0 w-full h-[80px] flex justify-between sm:justify-between md:justify-around lg:justify-around xl:justify-around items-center px-4 bg-[#F2C48D] text-white z-20">
       {/* Logo / Home */}
       <a className="font-extrabold text-2xl">X-PROJECT</a>
 

@@ -20,7 +20,7 @@ import mp12 from "../assets/img/image 13.png";
 
 const About = () => {
   return (
-    <div className="bg-image2 w-full h-[585vh] absolute text-[#D7996C] top-[108rem] sm:top-[110rem] md:top-[115rem] lg:top-[120rem] xl:top-[135rem]">
+    <div className="bg-image2  w-full h-[585vh]  max-[440px]:h-[310rem] max-[400px]:h-[290rem] max-[360px]:h-[290rem] md:h-[270rem] xl:h-[300rem] absolute text-[#D7996C] top-[108rem] sm:top-[110rem] md:top-[115rem] lg:top-[120rem] xl:top-[120rem] ">
       {/* Our Event */}
       <div className="w-full max-w-screen-xl mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
         <p
@@ -121,9 +121,14 @@ const About = () => {
         >
           Sponsorship
         </p>
-        <div className="grid grid-cols-2 lg:grid-cols-2 justify-items-center items-center sm:px-16 md:px-32 lg:px-64 xl:px-80 bg-white border-4 border-white w-full rounded-xl bg-opacity-40 -translate-y-6 py-8">
-          <img src={ukwu} width={200} height={200} className="translate-x-2" />
-          <img src={en} width={180} height={180} />
+        <div className="grid grid-cols-2 lg:grid-cols-2 justify-items-center items-center sm:px-16 md:px-32 lg:px-64 xl:px-80 bg-white border-4 border-white w-full rounded-xl bg-opacity-40 -translate-y-6 py-8 ">
+          <img
+            src={ukwu}
+            width={200}
+            height={200}
+            className="translate-x-2 max-[440px]:w-36"
+          />
+          <img src={en} width={180} height={180} className="max-[440px]:w-32" />
         </div>
       </div>
 
