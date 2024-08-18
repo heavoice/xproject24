@@ -38,6 +38,9 @@ const Navbar = () => {
           nav ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300`}
       >
+        <button>
+          <FaBars size={30} onClick={handleClick} />
+        </button>
         <ul className="space-y-6 text-2xl">
           <li onClick={handleClick}>Home</li>
           <li className="flex items-center" onClick={handleClick}>
