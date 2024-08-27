@@ -21,7 +21,7 @@ function UiuxContent() {
   };
 
   return (
-    <div className="bg-image5 w-full h-[705vh] sm:h-[935vh] flex flex-col items-center justify-center max-[440px]:overflow-hidden max-[400px]:h-[805vh]">
+    <div className="bg-image5 w-full h-[705vh] sm:h-[935vh] flex flex-col items-center justify-center overflow-hidden max-[400px]:h-[805vh]">
       {/* Bootcamp UI/UX */}
       <div className="max-[440px]:-mt-[55rem] max-[400px]:-mt-[50rem] flex flex-col text-center -mt-[60rem] sm:-mt-[70rem] md:-mt-[100rem] lg:-mt-[85rem] xl:-mt-[90rem]">
         <h1

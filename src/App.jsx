@@ -12,7 +12,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/" element={<Home />} />
-          <Route path="/uiux" element={<Uiux />} />
+          <Route path="/bootcamp" element={<Uiux />} />
           <Route path="/techpreneur" element={<Techpreneur />} />
         </Routes>
       </Router>

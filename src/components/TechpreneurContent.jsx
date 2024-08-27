@@ -21,7 +21,7 @@ function UiuxContent() {
   };
 
   return (
-    <div className="bg-image5 w-full h-[705vh] sm:h-[840vh] flex flex-col items-center justify-center max-[440px]:overflow-hidden max-[400px]:h-[705vh] max-[440px]:h-[625vh]">
+    <div className="bg-image5 w-full h-[705vh] sm:h-[840vh] flex flex-col items-center justify-center overflow-hidden max-[400px]:h-[705vh] max-[440px]:h-[625vh]">
       {/* techpreneurship */}
       <div className="flex flex-col text-center -mt-[90rem] sm:-mt-[90rem] md:-mt-[115rem] lg:-mt-[105rem] xl:-mt-[80rem] max-[440px]:-mt-[86rem] max-[400px]:-mt-[90rem] ">
         <h1
