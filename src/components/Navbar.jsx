@@ -41,7 +41,7 @@ function Navbar() {
             <div className="py-1">
               <MenuItem>
                 <Link
-                  to="/Uiux"
+                  to="/Bootcamp"
                   className="block px-4 py-2 text-sm text-white hover:text-[#D7996C] data-[focus]:bg-gray-100 data-[focus]:text-[#F2C48D]"
                 >
                   FULLSTACK WEB DEV

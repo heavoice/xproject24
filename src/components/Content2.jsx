@@ -20,9 +20,9 @@ import mp12 from "../assets/img/image 13.png";
 
 const Content2 = () => {
   return (
-    <div className="bg-image2 w-full h-[685vh] max-[440px]:h-[310rem] max-[400px]:h-[290rem] max-[360px]:h-[290rem] md:h-[270rem] xl:h-[300rem] absolute text-[#D7996C] top-[108rem] sm:top-[110rem] md:top-[115rem] lg:top-[120rem] xl:top-[130rem] ">
+    <div className="bg-image2 w-full h-[685vh] max-[440px]:h-[310rem] max-[400px]:h-[290rem] max-[360px]:h-[290rem] md:h-[270rem] xl:h-[300rem] absolute text-[#D7996C] top-[108rem] sm:top-[110rem] md:top-[115rem] lg:top-[120rem] xl:top-[130rem] max-[440px]:mt-28 max-[400px]:mt-0 ">
       {/* Our Event */}
-      <div className="w-full max-w-screen-xl mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
+      <div className="  w-full max-w-screen-xl mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
         <p
           className="text-xs sm:text-xl md:text-2xl lg:text-2xl flex text-white bg-[#D7996C] rounded-xl px-6 sm:px-12 py-3 z-10"
           style={{ fontFamily: "Lost Island" }}
