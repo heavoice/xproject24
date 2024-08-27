@@ -21,7 +21,7 @@ function UiuxContent() {
   };
 
   return (
-    <div className="bg-image5 w-full h-[705vh] sm:h-[935vh] flex flex-col items-center justify-center max-[440px]:overflow-hidden max-[400px]:h-[805vh]">
+    <div className="bg-image5 w-full h-[705vh] sm:h-[935vh] flex flex-col items-center justify-center overflow-hidden max-[400px]:h-[805vh]">
       {/* Bootcamp UI/UX */}
       <div className="max-[440px]:-mt-[55rem] max-[400px]:-mt-[50rem] flex flex-col text-center -mt-[60rem] sm:-mt-[70rem] md:-mt-[100rem] lg:-mt-[85rem] xl:-mt-[90rem]">
         <h1
@@ -288,7 +288,7 @@ function UiuxContent() {
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 justify-center lg:justify-start mt-10">
             <a
               className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]"
-              href="unesa.me/PendaftaranBootcampXproject2024"
+              href="https://unesa.me/PendaftaranBootcampXproject2024"
               target="_blank"
             >
               Daftar Sekarang
