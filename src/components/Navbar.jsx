@@ -95,7 +95,7 @@ function Navbar() {
           </li>
           {dropdown === "Tech Genius" && (
             <div className="flex flex-col space-y-4 text-xl">
-              <Link to="/Uiux" onClick={handleClick}>
+              <Link to="/bootcamp" onClick={handleClick}>
                 FULLSTACK WEB DEV
               </Link>
               <Link to="/Techpreneur" onClick={handleClick}>
