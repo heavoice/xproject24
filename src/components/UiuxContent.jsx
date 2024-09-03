@@ -23,7 +23,7 @@ function UiuxContent() {
   return (
     <div className="bg-image5 w-full h-[705vh] sm:h-[935vh] flex flex-col items-center justify-center overflow-hidden max-[400px]:h-[805vh]">
       {/* Bootcamp UI/UX */}
-      <div className="max-[440px]:-mt-[55rem] max-[400px]:-mt-[50rem] flex flex-col text-center -mt-[60rem] sm:-mt-[70rem] md:-mt-[100rem] lg:-mt-[85rem] xl:-mt-[90rem]">
+      <div className="max-[440px]:-mt-[55rem] max-[400px]:-mt-[50rem] flex flex-col text-center -mt-[60rem] sm:-mt-[70rem] md:-mt-[100rem] max-[1120px]:mt-[100rem]  xl:-mt-[90rem] ">
         <h1
           className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#0E5D84] whitespace-nowrap py-2"
           style={{ fontFamily: "Lost Island" }}
