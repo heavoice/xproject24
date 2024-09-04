@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/reusable/Footer";
-import Detail from "../components/uiux/Detail";
-import BootcampComponen from "../components/uiux/Home";
-import Overview from "../components/uiux/Overview";
-const Bootcamp = () => {
+import Detail from "../components/business/Detail";
+import BootcampComponen from "../components/business/Home";
+import Overview from "../components/business/Overview";
+const Business = () => {
   return (
     <>
       <Navbar />
@@ -13,9 +13,8 @@ const Bootcamp = () => {
         <Detail />
         <Footer />
       </div>
-      {/* <Footer2 /> */}
     </>
   );
 };
 
-export default Bootcamp;
+export default Business;
