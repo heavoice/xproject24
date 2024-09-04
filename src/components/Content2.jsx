@@ -5,14 +5,14 @@ import tech3 from "../assets/img/tech3.png";
 import teaser from "../assets/video/teaser.mp4";
 import ukwu from "../assets/img/ukwu.png";
 import en from "../assets/img/en.png";
-import mp1 from "../assets/img/image 2.png";
-import mp2 from "../assets/img/image 3.png";
-import mp3 from "../assets/img/image 4.png";
-import mp4 from "../assets/img/image 5.png";
-import mp5 from "../assets/img/image 6.png";
-import mp6 from "../assets/img/image 7.png";
-import mp7 from "../assets/img/image 8.png";
-import mp8 from "../assets/img/image 9.png";
+import mp1 from "../assets/img/Medpart/bem-fmipa.jpg";
+import mp2 from "../assets/img/Medpart/bemvokasiunesa_.PNG";
+import mp3 from "../assets/img/Medpart/hai.career.jpg";
+import mp4 from "../assets/img/Medpart/kabarevents.jpg";
+import mp5 from "../assets/img/Medpart/LOGO-HIMASIKA.jpeg";
+import mp6 from "../assets/img/Medpart/mediaEvent.png";
+import mp7 from "../assets/img/Medpart/ptmUnesa.PNG";
+import mp8 from "../assets/img/Medpart/webinar.id.PNG";
 import mp9 from "../assets/img/image 10.png";
 import mp10 from "../assets/img/image 11.png";
 import mp11 from "../assets/img/image 12.png";
@@ -20,9 +20,9 @@ import mp12 from "../assets/img/image 13.png";
 
 const Content2 = () => {
   return (
-    <div className="bg-image2 w-full h-[685vh] max-[440px]:h-[310rem] max-[400px]:h-[290rem] max-[360px]:h-[290rem] md:h-[270rem] xl:h-[300rem] absolute text-[#D7996C] top-[108rem] sm:top-[110rem] md:top-[115rem] lg:top-[120rem] xl:top-[130rem] max-[440px]:mt-28 max-[400px]:mt-0 ">
+    <div className="bg-image2 w-full h-[685vh] max-[440px]:h-[310rem] max-[400px]:h-[290rem] max-[360px]:h-[290rem] md:h-[270rem] xl:h-[300rem] absolute text-[#D7996C] top-[108rem] sm:top-[110rem] md:top-[115rem] lg:top-[120rem] xl:top-[130rem] ">
       {/* Our Event */}
-      <div className="  w-full max-w-screen-xl mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-screen-xl mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
         <p
           className="text-xs sm:text-xl md:text-2xl lg:text-2xl flex text-white bg-[#D7996C] rounded-xl px-6 sm:px-12 py-3 z-10"
           style={{ fontFamily: "Lost Island" }}
@@ -39,7 +39,7 @@ const Content2 = () => {
                 Tech Genius
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl text-[#9E7150] text-justify pl-2">
-                Tech Genius adalah kegiatan awal di X-Project 9.0 yang dirancang
+                Tech Genius adalah kegiatan awal di X-Project 10.0 yang dirancang
                 untuk membangun dan meningkatkan pemahaman serta keterampilan
                 teknologi di kalangan peserta dengan berbagai kegiatan
                 pelatihan.
@@ -79,7 +79,7 @@ const Content2 = () => {
                 Tech Genius
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl text-[#9E7150] text-justify pl-2">
-                Tech Genius adalah kegiatan awal di X-Project 9.0 yang dirancang
+                Tech Genius adalah kegiatan awal di X-Project 10.0 yang dirancang
                 untuk membangun dan meningkatkan pemahaman serta keterampilan
                 teknologi di kalangan peserta dengan berbagai kegiatan
                 pelatihan.

@@ -38,10 +38,7 @@ const Content1 = () => {
               About Us
             </h1>
           </div>
-          <div
-            className="bg-[#F5F2CB] max-[440px]:w-[90%] 
-          w-[70%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[80%] mx-auto h-auto rounded-xl grid items-center p-6 sm:p-12 md:p-16 lg:p-24 relative -translate-y-16 sm:-translate-y-28 md:-translate-y-44 lg:-translate-y-80 xl:-translate-y-80"
-          >
+          <div className="bg-[#F5F2CB] w-[70%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[80%] mx-auto h-auto rounded-xl grid items-center p-6 sm:p-12 md:p-16 lg:p-24 relative -translate-y-16 sm:-translate-y-28 md:-translate-y-44 lg:-translate-y-80 xl:-translate-y-80">
             <img
               src={Pelampung}
               alt="ornamen1"

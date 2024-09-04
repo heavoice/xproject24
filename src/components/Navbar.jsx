@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/img/logoXP.png";
 import { FaBars, FaTimes, FaAngleDown } from "react-icons/fa";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { Link } from "react-router-dom";
@@ -41,7 +41,7 @@ function Navbar() {
             <div className="py-1">
               <MenuItem>
                 <Link
-                  to="/Bootcamp"
+                  to="/Uiux"
                   className="block px-4 py-2 text-sm text-white hover:text-[#D7996C] data-[focus]:bg-gray-100 data-[focus]:text-[#F2C48D]"
                 >
                   FULLSTACK WEB DEV
@@ -62,7 +62,9 @@ function Navbar() {
           Championship <FaAngleDown className="ml-1" />
         </li>
         <li>Tech Symphony</li>
-        <li>About Us</li>
+        <Link to="/about-us" className="hover:text-[#D7996C]">
+          About Us
+        </Link>
       </ul>
 
       {/* Mobile Menu Icon */}
@@ -95,7 +97,7 @@ function Navbar() {
           </li>
           {dropdown === "Tech Genius" && (
             <div className="flex flex-col space-y-4 text-xl">
-              <Link to="/bootcamp" onClick={handleClick}>
+              <Link to="/Uiux" onClick={handleClick}>
                 FULLSTACK WEB DEV
               </Link>
               <Link to="/Techpreneur" onClick={handleClick}>

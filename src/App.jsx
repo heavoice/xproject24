@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Uiux from "./pages/Uiux";
 import Techpreneur from "./pages/Techpreneur";
+import AboutUs from "./pages/About";
 
 export default function App() {
   return (
@@ -12,8 +13,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/" element={<Home />} />
-          <Route path="/bootcamp" element={<Uiux />} />
+          <Route path="/uiux" element={<Uiux />} />
           <Route path="/techpreneur" element={<Techpreneur />} />
+          <Route path="/about-us" element={<AboutUs/>} />
         </Routes>
       </Router>
     </div>

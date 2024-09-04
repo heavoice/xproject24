@@ -6,7 +6,7 @@ import {
   FaYoutube,
   FaWordpress,
 } from "react-icons/fa";
-import logo from "../assets/img/logo.png";
+import logo from "../assets/img/logoXP.png";
 import unesa from "../assets/img/unesa.png";
 import ti from "../assets/img/ti.png";
 import si from "../assets/img/si.png";

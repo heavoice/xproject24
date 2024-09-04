@@ -9,6 +9,12 @@ module.exports = {
           "50%": { transform: "rotate(9deg)" },
         },
       },
+      screens: {
+        xs: { min: "320px", max: "640px" },
+      },
+      fontSize: {
+        "2xs": "0.625rem",
+      },
       animation: {
         "spin-slow": "spin 1s linear infinite",
         wiggle: "wiggle 1s ease-in-out infinite",

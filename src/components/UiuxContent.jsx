@@ -3,27 +3,29 @@ import Batu1 from "../assets/img/Batu (1).png";
 import Batu2 from "../assets/img/Batu (2).png";
 import Pemateri from "../assets/img/pemateri1.png";
 import Maskot from "../assets/img/maskot.png";
-import Poster from "../assets/img/PamfletBootcamp.png";
+import Poster from "../assets/img/PamfletBootcampNew.png"
 import { FaWhatsapp } from "react-icons/fa";
 
 function UiuxContent() {
-  const [openPoster, setOpenPoster] = useState(false);
+  const[openPoster,setOpenPoster]=useState(false)
 
   const handleClick = () => {
-    window.location.href = "unesa.me/PendaftaranBootcampXproject2024";
+    window.location.href =
+      "http://unesa.me/PendaftaranBootcampXproject2024";
   };
 
-  const onClick = () => {
-    setOpenPoster(true);
-  };
-  const handleClose = () => {
-    setOpenPoster(false);
-  };
+  const onClick =()=>{
+    setOpenPoster(true)
+  }
+  const handleClose =()=>{
+    setOpenPoster(false)
+  }
+
 
   return (
-    <div className="bg-image5 w-full h-[705vh] sm:h-[935vh] flex flex-col items-center justify-center overflow-hidden max-[400px]:h-[805vh]">
+    <div className="bg-image5 w-full h-[705vh] sm:h-[935vh] flex flex-col items-center justify-center">
       {/* Bootcamp UI/UX */}
-      <div className="max-[440px]:-mt-[55rem] max-[400px]:-mt-[50rem] flex flex-col text-center -mt-[60rem] sm:-mt-[70rem] md:-mt-[100rem] lg:-mt-[85rem] xl:-mt-[90rem]">
+      <div className="flex flex-col text-center -mt-[60rem] sm:-mt-[70rem] md:-mt-[100rem] lg:-mt-[85rem] xl:-mt-[90rem]">
         <h1
           className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#0E5D84] whitespace-nowrap py-2"
           style={{ fontFamily: "Lost Island" }}
@@ -47,7 +49,7 @@ function UiuxContent() {
         </div>
       </div>
       {/* Overview */}
-      <div className="max-[440px]:-mt-[0rem] translate-y-[27rem] sm:translate-y-[40rem] flex flex-col justify-center z-10">
+      <div className="translate-y-[27rem] sm:translate-y-[40rem] flex flex-col justify-center z-10">
         <h1
           className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#523D31] rounded-xl px-16 py-4"
           style={{ fontFamily: "Lost Island" }}
@@ -168,7 +170,7 @@ function UiuxContent() {
         pendaftaran & pembayaran
       </h1>
       <h1 className="text-sm sm:text-sm md:text-base lg:text-2xl font-semibold text-center text-[#7F5238] bg-[#F5F2CB] rounded-xl px-8 sm:px-12 lg:px-16 py-4 translate-y-[10rem] sm:-translate-y-[5.5rem] translate-x-[8rem] sm:translate-x-[11.5rem] md:translate-x-[12.5rem] lg:translate-x-[17.5rem]">
-        20 Agustus - <br /> 3 September 2024
+        20 Agustus - <br /> 4 September 2024
       </h1>
       <div className="translate-y-[1.5rem]">
         <h1
@@ -267,9 +269,7 @@ function UiuxContent() {
         </div>
         <div className="flex items-center justify-center text-2xl sm:text-3xl lg:text-5xl text-[#523D31] -translate-x-[0.6rem] sm:-translate-x-[0.7rem] md:-translate-x-[1.2rem]">
           <FaWhatsapp className="mr-2 sm:mr-4" />
-          <h1 style={{ fontFamily: "Lost Island" }}>
-            0858-1132-6241 (Sarah Nabila)
-          </h1>
+          <h1 style={{ fontFamily: "Lost Island" }}>0858-1132-6241 (Sarah Nabila)</h1>
         </div>
       </div>
       {/*daftar skrg & poster*/}
@@ -286,17 +286,10 @@ function UiuxContent() {
         >
           Gimana Tertarik? <br /> Yuk daftar!
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 justify-center lg:justify-start mt-10">
-            <a
-              className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]"
-              href="https://unesa.me/PendaftaranBootcampXproject2024"
-              target="_blank"
-            >
+            <a className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]">
               Daftar Sekarang
             </a>
-            <button
-              className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#486D24] bg-[#486D24] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#293f16] hover:border-[#293f16]"
-              onClick={onClick}
-            >
+            <button className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#486D24] bg-[#486D24] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#293f16] hover:border-[#293f16]" onClick={onClick}>
               Poster
             </button>
           </div>
@@ -305,15 +298,15 @@ function UiuxContent() {
       {openPoster && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
           <div className="relative">
-            <button
-              onClick={handleClose}
+            <button 
+              onClick={handleClose} 
               className="absolute top-0 right-2 md:top-0 md:-right-9 text-white md:text-5xl text-7xl font-bold hover:text-gray-400"
             >
               &times;
             </button>
-            <img
-              src={Poster}
-              alt="Popup Image"
+            <img 
+              src={Poster} 
+              alt="Popup Image" 
               className=" md:max-w-[30rem] max-h-full object-contain"
             />
           </div>
