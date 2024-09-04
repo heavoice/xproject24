@@ -155,7 +155,7 @@ function Navbar() {
             <Link to="/TechSymphony">Tech Symphony</Link>
           </li>
           <li onClick={handleClick}>
-            <Link to="/AboutUs">About Us</Link>
+            <Link to="/About-Us">About Us</Link>
           </li>
         </ul>
       </div>
