@@ -1,13 +1,12 @@
-import bg2 from "../../assets/img/ic/bg3.png";
+// import bg2 from "../../assets/img/ic/bg3.png";
+import bg2 from "../../assets/img/ic/coba.png";
 import Batu1 from "../../assets/img/batu1.png";
 import Batu2 from "../../assets/img/batu2.png";
+import { gelombang, daunKiri } from "../../assets";
 const Overview = () => {
   return (
     <>
-      <div
-        className="-mt-1  w-full h-full pb-20 bg-cover bg-top  bg-no-repeat"
-        style={{ backgroundImage: `url(${bg2})` }}
-      >
+      <div className="-mt-1  w-full h-full pb-20 ">
         <div className="pt-1">
           <div className="w-[160px] lg:w-[240px] xl:w-[270px] mx-auto flex flex-col justify-center z-10 text-center">
             <h1
@@ -17,6 +16,7 @@ const Overview = () => {
               Overview
             </h1>
           </div>
+
           <div
             className="mx-auto -mt-4 w-[90%] lg:w-[85%] bg-[#F5F2CB] rounded-xl p-5 pt-7 md:p-9 lg:py-16 lg:px-12"
             style={{
@@ -47,6 +47,18 @@ const Overview = () => {
             <img
               src={Batu1}
               className="absolute w-[120px] md:w-[180px] xl:w-[220px] right-0 -mt-3 lg:mt-6 lg:mr-6 xl:mt-1"
+            />
+          </div>
+          <div>
+            <img
+              className="absolute w-full 2xl:-mt-40 2xl:h-[600px]  z-[-1]"
+              src={gelombang}
+              alt=""
+            />
+            <img
+              className="absolute w-[200px] md:w-[350px] xl:w-[450px] -ml-20 z-[-1]"
+              src={daunKiri}
+              alt=""
             />
           </div>
         </div>

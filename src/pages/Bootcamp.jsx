@@ -8,8 +8,10 @@ const Bootcamp = () => {
     <>
       <Navbar />
       <BootcampComponen />
-      <Overview />
-      <Detail />
+      <div className="bg-gradient-to-t from-[#6B7F2D] to-[#8EA946] z-[-100] relative ">
+        <Overview />
+        <Detail />
+      </div>
       {/* <Footer2 /> */}
     </>
   );

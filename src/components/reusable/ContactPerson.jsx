@@ -10,20 +10,31 @@ const ContactPerson = ({
   secondno,
 }) => {
   return (
-    <div className="w-full md:w-fit h-full px-6 md:px-[8.2rem] pb-36 md:pb-56 relative z-20 mx-auto">
-      <div className="border-2 border-white py-12 md:py-16 px-7 md:px-20 rounded-lg bg-gradient-to-r from-blue-600/30 via-white/[0.03] to-blue-400/30 backdrop-blur shadow-[0px_6px_6px_0px_rgba(0,0,0,0.25)]">
+    <div className="w-full md:w-fit h-full px-6 md:px-[8.2rem] pt-20 pb-20 md:pb-36 relative  mx-auto">
+      <div className="w-[160px] lg:w-[240px] xl:w-[270px]  text-center mx-auto">
+        <h1
+          className=" md:text-xl lg:text-2xl text-white bg-[#523D31] rounded-xl  py-4 "
+          style={{ fontFamily: "Lost Island" }}
+        >
+          Contact
+        </h1>
+      </div>
+      <div className="mt-10 border-2 border-white py-12 md:py-16 px-7 md:px-20 rounded-lg bg-[#F5F2CB]">
         <a
           className="flex gap-5 w-full mb-8"
           target="_blank"
           href={firstlink}
           rel="noopener noreferrer"
+          style={{ fontFamily: "Lost Island" }}
         >
           <img src={whatsapp} alt="" />
-          <div className="text-white">
-            <h3 className="text-xl md:text-[2rem] font-bold -mb-2 md:mb-0">
-              {firstcp}
-            </h3>
-            <p className="text-lg md:text-2xl">{firstno}</p>
+          <div className="text-[#523D31]">
+            <h1
+              className="text-lg md:text-[2rem] font-semibold "
+              style={{ fontFamily: "Lost Island" }}
+            >
+              {firstno} ({firstcp})
+            </h1>
           </div>
         </a>
         <a
@@ -31,13 +42,16 @@ const ContactPerson = ({
           target="_blank"
           href={secondlink}
           rel="noopener noreferrer"
+          style={{ fontFamily: "Lost Island" }}
         >
           <img src={whatsapp} alt="" />
-          <div className="text-white">
-            <h3 className="text-xl md:text-[2rem] font-bold -mb-2 md:mb-0">
-              {secondcp}
-            </h3>
-            <p className="text-lg md:text-2xl">{secondno}</p>
+          <div className="text-[#523D31]">
+            <h1
+              className="text-lg md:text-[2rem] font-semibold "
+              style={{ fontFamily: "Lost Island" }}
+            >
+              {secondno} ({secondcp})
+            </h1>
           </div>
         </a>
       </div>
