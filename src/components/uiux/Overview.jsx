@@ -60,7 +60,7 @@ const Overview = () => {
               Detail
             </h1>
           </div>
-          <div className="pt-10 grid md:grid-cols-3 gap-3 ">
+          <div className="pt-10 grid md:grid-cols-3 gap-3 2xl:w-[1200px] 2xl:mx-auto ">
             <div className="w-[220px] lg:w-[300px] xl:w-[340px] mx-auto flex flex-col justify-center text-center">
               <h1
                 className=" md:text-xl lg:text-2xl text-white bg-[#7F5238] rounded-xl  py-2 "

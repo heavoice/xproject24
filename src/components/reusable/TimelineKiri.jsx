@@ -5,7 +5,7 @@ const TimelineKiri = ({ judul, isi }) => {
     <>
       <div className="grid w-full max-w-6xl grid-cols-9 mx-auto  ">
         {/* start */}
-        <div className=" col-span-4 w-[150px] md:w-[260px] lg:w-[300px] xl:w-[340px] mx-auto flex flex-col  text-center ml-6 md:ml-20 ">
+        <div className=" col-span-4 w-[150px] md:w-[260px] lg:w-[300px] xl:w-[340px] mx-auto flex flex-col  text-center ml-6 md:ml-20 lg:ml-48 ">
           <Title judul={judul} isi={isi} />
         </div>
         <div className="col-span-1 ">

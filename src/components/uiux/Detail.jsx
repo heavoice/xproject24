@@ -1,4 +1,5 @@
 import bg4 from "../../assets/img/ic/bg4.png";
+import Prizepool from "../reusable/Prizepool";
 import TimelineKanan from "../reusable/TimelineKanan";
 import TimelineKiri from "../reusable/TimelineKiri";
 import TimelineAkhir from "../reusable/TimelineTerakhir";
@@ -6,7 +7,7 @@ const Detail = () => {
   return (
     <>
       <div
-        className=" pb-20 w-full h-full bg-cover  bg-no-repeat -mt-1"
+        className=" pb-20 w-full h-full bg-cover   bg-no-repeat -mt-1"
         style={{ backgroundImage: `url(${bg4})` }}
       >
         <div className="w-[160px] lg:w-[240px] xl:w-[270px] mx-auto flex flex-col justify-center z-10 text-center">
@@ -22,7 +23,7 @@ const Detail = () => {
             judul="Pendaftaran & Pengumpulan Berkas"
             isi="14 September - 24 Oktober 2024"
           />
-          <div className="-mt-5 md:-mt-6">
+          <div className="-mt-5 md:-mt-6 lg:-mt-5">
             <TimelineKiri judul="Pengumuman Semifinal" isi="31 Oktober 2024" />
           </div>
           <div className="-mt-5">
@@ -53,6 +54,8 @@ const Detail = () => {
             />
           </div>
         </div>
+        {/* PrizeList */}
+        <Prizepool />
       </div>
     </>
   );
