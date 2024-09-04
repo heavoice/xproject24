@@ -1,5 +1,3 @@
-// import bg2 from "../../assets/img/ic/bg3.png";
-import bg2 from "../../assets/img/ic/coba.png";
 import Batu1 from "../../assets/img/batu1.png";
 import Batu2 from "../../assets/img/batu2.png";
 import { gelombang, daunKiri } from "../../assets";

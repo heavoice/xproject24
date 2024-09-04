@@ -1,4 +1,3 @@
-import bg4 from "../../assets/img/ic/bg4.png";
 import ContactPerson from "../reusable/ContactPerson";
 import Prizepool from "../reusable/Prizepool";
 import TimelineKanan from "../reusable/TimelineKanan";
