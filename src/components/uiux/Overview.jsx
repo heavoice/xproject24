@@ -66,32 +66,32 @@ const Overview = () => {
               alt=""
             />
             <img
-              className="absolute w-[150px] md:w-[350px] xl:w-[300px] mt-20 z-[-1] right-0 mt-[15rem]"
+              className="absolute w-[150px] md:w-[200px] xl:w-[250px] mt-20 z-[-1] right-0 mt-[15rem] xl:mt-[20rem]"
               src={rantingKanan}
               alt=""
             />
             <img
-              className="absolute w-[120px] md:w-[350px] xl:w-[450px]  z-[-2] right-0 mt-[21rem]"
+              className="absolute w-[120px] md:w-[200px] xl:w-[280px]  z-[-2] right-0 mt-[21rem] xl:mt-[26rem]"
               src={daunKanan}
               alt=""
             />
             <img
-              className="absolute w-full 2xl:-mt-40 2xl:h-[600px] mt-[22rem]  z-[-4]"
+              className="absolute w-full 2xl:-mt-40 2xl:h-[600px] mt-[22rem] md:mt-[30rem] xl:mt-[40rem] z-[-4]"
               src={gelombang}
               alt=""
             />
             <img
-              className="absolute w-full 2xl:-mt-40 2xl:h-[600px]  mt-[26rem] z-[-3]"
+              className="absolute w-full 2xl:-mt-40 2xl:h-[600px] xl:mt-[32rem]  mt-[26rem] z-[-3]"
               src={gelombang}
               alt=""
             />
             <img
-              className="absolute w-[120px] md:w-[350px] xl:w-[450px]  z-[-2] left-0 mt-[40rem]"
+              className="absolute w-[120px] md:w-[230px] xl:w-[240px]  z-[-2] left-0 mt-[40rem] xl:mt-[48rem]"
               src={daunKiriFlip}
               alt=""
             />
             <img
-              className="absolute w-[120px] md:w-[350px] xl:w-[450px] - z-[-2] left-0 mt-[35rem]"
+              className="absolute w-[120px] md:w-[180px] xl:w-[240px] z-[-2] left-0 mt-[35rem] xl:mt-[38rem]"
               src={rantingKiri}
               alt=""
             />
