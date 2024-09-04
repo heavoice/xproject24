@@ -1,10 +1,17 @@
 import Batu1 from "../../assets/img/batu1.png";
 import Batu2 from "../../assets/img/batu2.png";
-import { gelombang, daunKiri } from "../../assets";
+import {
+  gelombang,
+  daunKiri,
+  daunKanan,
+  rantingKanan,
+  rantingKiri,
+  daunKiriFlip,
+} from "../../assets";
 const Overview = () => {
   return (
     <>
-      <div className="-mt-1  w-full h-full pb-20 ">
+      <div className="-mt-1  w-full h-full pb-20  ">
         <div className="pt-1">
           <div className="w-[160px] lg:w-[240px] xl:w-[270px] mx-auto flex flex-col justify-center z-10 text-center">
             <h1
@@ -47,7 +54,7 @@ const Overview = () => {
               className="absolute w-[120px] md:w-[180px] xl:w-[220px] right-0 -mt-3 lg:mt-6 lg:mr-6 xl:mt-1"
             />
           </div>
-          <div>
+          <div className="overflow-x-hidden">
             <img
               className="absolute w-full 2xl:-mt-40 2xl:h-[600px]  z-[-1]"
               src={gelombang}
@@ -56,6 +63,36 @@ const Overview = () => {
             <img
               className="absolute w-[200px] md:w-[350px] xl:w-[450px] -ml-20 z-[-1]"
               src={daunKiri}
+              alt=""
+            />
+            <img
+              className="absolute w-[150px] md:w-[350px] xl:w-[300px] mt-20 z-[-1] right-0 mt-[15rem]"
+              src={rantingKanan}
+              alt=""
+            />
+            <img
+              className="absolute w-[120px] md:w-[350px] xl:w-[450px]  z-[-2] right-0 mt-[21rem]"
+              src={daunKanan}
+              alt=""
+            />
+            <img
+              className="absolute w-full 2xl:-mt-40 2xl:h-[600px] mt-[22rem]  z-[-4]"
+              src={gelombang}
+              alt=""
+            />
+            <img
+              className="absolute w-full 2xl:-mt-40 2xl:h-[600px]  mt-[26rem] z-[-3]"
+              src={gelombang}
+              alt=""
+            />
+            <img
+              className="absolute w-[120px] md:w-[350px] xl:w-[450px]  z-[-2] left-0 mt-[40rem]"
+              src={daunKiriFlip}
+              alt=""
+            />
+            <img
+              className="absolute w-[120px] md:w-[350px] xl:w-[450px] - z-[-2] left-0 mt-[35rem]"
+              src={rantingKiri}
               alt=""
             />
           </div>

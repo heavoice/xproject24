@@ -4,10 +4,11 @@ import TimelineKanan from "../reusable/TimelineKanan";
 import TimelineKiri from "../reusable/TimelineKiri";
 import TimelineAkhir from "../reusable/TimelineTerakhir";
 import TitleDaftar from "../reusable/TitleDaftar";
+import { batuTingkat, batuFlip } from "../../assets";
 const Detail = () => {
   return (
     <>
-      <div className=" pb-20 w-full h-full bg-cover   bg-no-repeat -mt-1">
+      <div className=" pb-20 w-full h-full bg-cover bg-no-repeat -mt-1">
         <div className="w-[160px] lg:w-[240px] xl:w-[270px] mx-auto flex flex-col justify-center z-10 text-center">
           <h1
             className=" md:text-xl lg:text-2xl text-white bg-[#523D31] rounded-xl  py-4 "
@@ -15,6 +16,14 @@ const Detail = () => {
           >
             Timeline
           </h1>
+        </div>
+        <div>
+          <img
+            className="absolute z-[-1] mt-[18rem] "
+            src={batuTingkat}
+            alt=""
+          />
+          {/* <img className="absolute z-[-1] mt-[40rem] " src={batuFlip} alt="" /> */}
         </div>
         <div className="pt-10">
           <TimelineKanan
