@@ -14,6 +14,7 @@ module.exports = {
       },
       fontSize: {
         "2xs": "0.625rem",
+        "4xs": "0.500rem",
       },
       animation: {
         "spin-slow": "spin 1s linear infinite",

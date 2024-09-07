@@ -82,7 +82,7 @@ function Navbar() {
               </MenuItem>
               <MenuItem>
                 <Link
-                  to="/Techpreneur"
+                  to="/business-plan"
                   className="block px-4 py-2 text-sm text-white hover:text-[#D7996C] data-[focus]:bg-gray-100 data-[focus]:text-[#F2C48D]"
                 >
                   Business Plan Competiton
@@ -146,7 +146,7 @@ function Navbar() {
               <Link to="/uiux" onClick={handleClick}>
                 UiUx Competiton
               </Link>
-              <Link to="/business" onClick={handleClick}>
+              <Link to="/business-plan" onClick={handleClick}>
                 Business Plan Competiton
               </Link>
             </div>
