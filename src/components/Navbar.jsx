@@ -91,7 +91,9 @@ function Navbar() {
             </div>
           </MenuItems>
         </Menu>
-        <li>Tech Symphony</li>
+        <Link to="/tech-symphony" className="hover:text-[#D7996C]">
+          Tech Symphony
+        </Link>
         <Link to="/about-us" className="hover:text-[#D7996C]">
           About Us
         </Link>
@@ -152,7 +154,7 @@ function Navbar() {
             </div>
           )}
           <li onClick={handleClick}>
-            <Link to="/TechSymphony">Tech Symphony</Link>
+            <Link to="/tech-symphony">Tech Symphony</Link>
           </li>
           <li onClick={handleClick}>
             <Link to="/About-Us">About Us</Link>

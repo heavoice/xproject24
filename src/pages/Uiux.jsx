@@ -1,19 +1,12 @@
 import Navbar from "../components/Navbar";
-import Footer from "../components/reusable/Footer";
-import Detail from "../components/uiux/Detail";
-import BootcampComponen from "../components/uiux/Home";
-import Overview from "../components/uiux/Overview";
+import Footer from "../components/uiux/Footer";
+import Content from "../components/uiux/Content";
 const Bootcamp = () => {
   return (
     <>
       <Navbar />
-      <BootcampComponen />
-      <div className="bg-gradient-to-t from-[#6B7F2D] to-[#8EA946] z-[-100] relative ">
-        <Overview />
-        <Detail />
-        <Footer />
-      </div>
-      {/* <Footer2 /> */}
+      <Content />
+      <Footer />
     </>
   );
 };

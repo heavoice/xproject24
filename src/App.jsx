@@ -8,6 +8,7 @@ import AboutUs from "./pages/About";
 import Bootcamp from "./pages/Bootcamp";
 import Business from "./pages/Busieness";
 import ICBusinessCompetition from "./pages/ICBusinessCompetition";
+import TSymphony from "./pages/TSymphony";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/bootcamp" element={<Bootcamp />} />
           <Route path="/techpreneur" element={<Techpreneur />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/tech-symphony" element={<TSymphony />} />
         </Routes>
       </Router>
     </div>

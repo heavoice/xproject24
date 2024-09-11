@@ -53,7 +53,7 @@ function Content({
   `,
           }}
         >
-          Business Plan <br />{" "}
+          UI/UX Design <br />{" "}
           <span
             style={{
               color: "#0E5D84",
@@ -109,14 +109,13 @@ function Content({
           className="xs:pt-2 xs:text-xs lg:text-2xl lg:pt-2"
           style={{ fontFamily: "Poppins" }}
         >
-          Webinar Tech Enterpreneurship adalah sebuah webinar yang dilakukan
-          secara online yang fokus pada eksplorasi dan pemahaman tentang
-          perkembangan teknologi terkini dalam konteks bisnis. Webinar ini
-          dirancang dengan tujuan memberikan wawasan terhadap peserta mengenai
-          teknologi terbaru yang relevan dengan dunia bisnis serta strategi
-          efektif untuk mengintegrasikan teknologi ke dalam operasional bisnis
-          dengan mengidentifikasi peluang dan tantangan terkait teknologi
-          inovasi bisnis.
+          UI/UX Design Competition adalah bagian dari Informatics Championship
+          (IC) 2024 yang bertujuan mendorong kreativitas dan inovasi dalam
+          desain antarmuka pengguna (UI) dan pengalaman pengguna (UX). Peserta
+          ditantang untuk merancang desain aplikasi yang memudahkan interaksi,
+          meningkatkan kepuasan, serta memenuhi tujuan fungsional produk, dengan
+          mempertimbangkan estetika, aksesibilitas, responsivitas, dan
+          intuitivitas.
         </p>
         <img
           src={Batu2}
@@ -202,7 +201,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-6 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pendaftaran & <br /> Pengumpulan BMC
+                Pendaftaran & <br /> Pengumpulan Proposal
               </h1>
             </div>
             <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
@@ -219,13 +218,13 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-6 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumuman Lolos <br /> Semifinal
+                Pengumuman Semifinal
               </h1>
             </div>
-            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
+            <div className="absolute xs:right-8 xs:top-9 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
               <h1
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
@@ -241,15 +240,15 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumpulan Proposal <br /> Gelombang 1
+                Pengumpulan Karya
               </h1>
             </div>
-            <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
+            <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
               <h1
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                1 – 9 November 2024
+                1 – 13 November 2024
               </h1>
             </div>
           </div>
@@ -260,7 +259,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumpulan Proposal <br /> Gelombang 2
+                Pengumpulan Media <br /> Presentasi (PPT)
               </h1>
             </div>
             <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
@@ -268,7 +267,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                10 – 14 November 2024
+                20 – 23 November 2024
               </h1>
             </div>
           </div>
@@ -279,7 +278,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumuman 10 Besar <br /> Finalis
+                Pengumuman <br /> Finalis
               </h1>
             </div>
             <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
@@ -298,7 +297,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-5 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumpulan Media <br /> Presentasi (PPT)
+                Technical <br /> Meeting
               </h1>
             </div>
             <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
@@ -306,7 +305,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                22 – 25 November 2024
+                23 November 2024
               </h1>
             </div>
           </div>
@@ -325,7 +324,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                26 November 2024
+                24 November 2024
               </h1>
             </div>
           </div>
@@ -344,7 +343,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                1 Desember 2024
+                28 November 2024
               </h1>
             </div>
           </div>
@@ -453,8 +452,8 @@ function Content({
                   className="text-lg md:text-[2rem] font-semibold "
                   style={{ fontFamily: "Lost Island" }}
                 >
-                  {firstno ? firstno : "0877-0145-1504"} (
-                  {firstcp ? firstcp : "Tiffani"})
+                  {firstno ? firstno : "0881-5048-046"} (
+                  {firstcp ? firstcp : "Amanda"})
                 </h1>
               </div>
             </a>
@@ -471,8 +470,8 @@ function Content({
                   className="text-lg md:text-[2rem] font-semibold "
                   style={{ fontFamily: "Lost Island" }}
                 >
-                  {secondno ? secondno : "0812-5403-3669"} (
-                  {secondcp ? secondcp : "Anggita"})
+                  {secondno ? secondno : "0882-2819-9404"} (
+                  {secondcp ? secondcp : "Ahmad Daffa"})
                 </h1>
               </div>
             </a>
