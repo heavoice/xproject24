@@ -10,7 +10,7 @@ module.exports = {
         },
       },
       screens: {
-        xs: { min: "320px", max: "640px" },
+        xs: { min: "320px", max: "639px" },
       },
       fontSize: {
         "2xs": "0.625rem",

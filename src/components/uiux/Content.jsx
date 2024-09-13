@@ -18,6 +18,10 @@ function Content({
 }) {
   const [openPoster, setOpenPoster] = useState(false);
 
+  const LinkPendaftaran = () => {
+    window.location.href = "https://unesa.me/PendaftaranDanPengumpulanUIUX";
+  };
+
   const onClick = () => {
     setOpenPoster(true);
   };
@@ -80,6 +84,7 @@ function Content({
           </span>
         </h1>
         <button
+          onClick={LinkPendaftaran}
           className="mx-auto transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl text-white rounded-xl border-green-600 bg-green-600 border-2 px-2 sm:px-8 md:px-9 py-1 sm:py-3 md:py-4 flex items-center hover:bg-green-900 hover:border-green-900"
           style={{ fontFamily: "Lost Island" }}
         >
@@ -198,15 +203,15 @@ function Content({
           <div className="relative bottom-1 -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-6 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.1rem] xs:py-2 sm:px-7 sm:py-2 md:px-8 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 Pendaftaran & <br /> Pengumpulan Proposal
               </h1>
             </div>
-            <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
+            <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 md:top-[4.5rem] lg:left-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-14 sm:py-2 lg:px-16 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 14 September – <br />
@@ -218,15 +223,15 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 md:px-[1.85rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 Pengumuman Semifinal
               </h1>
             </div>
-            <div className="absolute xs:right-8 xs:top-9 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
+            <div className="absolute xs:right-8 xs:top-9 sm:right-16 sm:top-14 md:top-[3rem] lg:right-16 lg:top-16 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[3.35rem] sm:py-2 lg:px-[4rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 31 Oktober 2024
@@ -237,13 +242,13 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.35rem] xs:py-2 sm:px-8 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 Pengumpulan Karya
               </h1>
             </div>
-            <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
+            <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-14 md:top-[3rem] lg:left-16 lg:top-16 text-center">
               <h1
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
@@ -256,13 +261,13 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.3rem] xs:py-2 sm:px-10 sm:py-2 lg:px-11 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 Pengumpulan Media <br /> Presentasi (PPT)
               </h1>
             </div>
-            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
+            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 md:top-[4.5rem] lg:right-16 lg:top-24 text-center">
               <h1
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
@@ -275,15 +280,15 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-7 xs:py-2 sm:px-[3.1rem] sm:py-2 lg:px-[3.6rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 Pengumuman <br /> Finalis
               </h1>
             </div>
-            <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
+            <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 md:top-[4.5rem] lg:left-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 md:px-8 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 20 November 2024
@@ -294,15 +299,15 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-5 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-7 xs:py-2 sm:px-[3.85rem] sm:py-2 lg:px-[4.65rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 Technical <br /> Meeting
               </h1>
             </div>
-            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
+            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 md:top-[4.5rem] lg:right-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 md:px-[2.15rem] sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 23 November 2024
@@ -313,13 +318,13 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-10 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-10 xs:py-2 sm:px-20 sm:py-2 md:px-[4.4rem] lg:px-[5.6rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 Final
               </h1>
             </div>
-            <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-12 lg:left-16 lg:top-14 text-center">
+            <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-12 lg:left-16 lg:top-16 text-center">
               <h1
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
@@ -332,13 +337,13 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-5 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.4rem] xs:py-2 sm:px-[2.1rem] sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 Pengumuman <br /> Pemenang Lomba
               </h1>
             </div>
-            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
+            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 md:top-[4.5rem] lg:right-16 lg:top-24 text-center">
               <h1
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
@@ -493,9 +498,12 @@ function Content({
           >
             Gimana Tertarik? <br /> Yuk daftar!
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 justify-center lg:justify-start mt-10 ">
-              <a className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]">
+              <button
+                onClick={LinkPendaftaran}
+                className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]"
+              >
                 Daftar Sekarang
-              </a>
+              </button>
               <button
                 className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#486D24] bg-[#486D24] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#293f16] hover:border-[#293f16]"
                 onClick={onClick}
