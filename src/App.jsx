@@ -7,7 +7,7 @@ import Techpreneur from "./pages/Techpreneur";
 import AboutUs from "./pages/About";
 import Bootcamp from "./pages/Bootcamp";
 import Business from "./pages/Busieness";
-import ICBusinessCompetition from "./pages/ICBusinessCompetition";
+import BPC from "./pages/BPC";
 import TSymphony from "./pages/TSymphony";
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/business-plan" element={<ICBusinessCompetition />} />
+          <Route path="/business-plan" element={<BPC />} />
           <Route path="/uiux" element={<Uiux />} />
           <Route path="/business" element={<Business />} />
           <Route path="/bootcamp" element={<Bootcamp />} />

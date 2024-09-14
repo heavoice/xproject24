@@ -1,8 +1,19 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion"; // Import Framer Motion
 import Logo from "../assets/img/logoXP.png";
 import { FaBars, FaTimes, FaAngleDown } from "react-icons/fa";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { Link } from "react-router-dom";
+
+// Framer Motion Variants for Staggered Animation
+const dropdownVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.1 }, // Add delay for staggered effect
+  }),
+};
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -25,6 +36,8 @@ function Navbar() {
         <Link to="/" className="hover:text-[#D7996C]">
           Home
         </Link>
+
+        {/* Tech Genius Dropdown */}
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <MenuButton>
@@ -34,30 +47,43 @@ function Navbar() {
             </MenuButton>
           </div>
 
-          <MenuItems
-            transition
-            className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-[#F2C48D] shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
-          >
+          <MenuItems className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-[#F2C48D] shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="py-1">
               <MenuItem>
-                <Link
-                  to="/Bootcamp"
-                  className="block px-4 py-2 text-sm text-white hover:text-[#D7996C] data-[focus]:bg-gray-100 data-[focus]:text-[#F2C48D]"
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  custom={0} // Stagger index 0
+                  variants={dropdownVariants}
                 >
-                  FULLSTACK WEB DEV
-                </Link>
+                  <Link
+                    to="/Bootcamp"
+                    className="block px-4 py-2 text-sm text-white hover:text-[#D7996C]"
+                  >
+                    FULLSTACK WEB DEV
+                  </Link>
+                </motion.div>
               </MenuItem>
               <MenuItem>
-                <Link
-                  to="/Techpreneur"
-                  className="block px-4 py-2 text-sm text-white hover:text-[#D7996C] data-[focus]:bg-gray-100 data-[focus]:text-[#F2C48D]"
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  custom={1} // Stagger index 1
+                  variants={dropdownVariants}
                 >
-                  TECH ENTREPRENEURSHIP WEBINAR
-                </Link>
+                  <Link
+                    to="/Techpreneur"
+                    className="block px-4 py-2 text-sm text-white hover:text-[#D7996C]"
+                  >
+                    TECH ENTREPRENEURSHIP WEBINAR
+                  </Link>
+                </motion.div>
               </MenuItem>
             </div>
           </MenuItems>
         </Menu>
+
+        {/* Championship Dropdown */}
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <MenuButton>
@@ -67,30 +93,42 @@ function Navbar() {
             </MenuButton>
           </div>
 
-          <MenuItems
-            transition
-            className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-[#F2C48D] shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
-          >
+          <MenuItems className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-[#F2C48D] shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="py-1">
               <MenuItem>
-                <Link
-                  to="/Uiux"
-                  className="block px-4 py-2 text-sm text-white hover:text-[#D7996C] data-[focus]:bg-gray-100 data-[focus]:text-[#F2C48D]"
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  custom={0}
+                  variants={dropdownVariants}
                 >
-                  UI/UX Competiton
-                </Link>
+                  <Link
+                    to="/Uiux"
+                    className="block px-4 py-2 text-sm text-white hover:text-[#D7996C]"
+                  >
+                    UI/UX Competition
+                  </Link>
+                </motion.div>
               </MenuItem>
               <MenuItem>
-                <Link
-                  to="/business-plan"
-                  className="block px-4 py-2 text-sm text-white hover:text-[#D7996C] data-[focus]:bg-gray-100 data-[focus]:text-[#F2C48D]"
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  custom={1}
+                  variants={dropdownVariants}
                 >
-                  Business Plan Competiton
-                </Link>
+                  <Link
+                    to="/business-plan"
+                    className="block px-4 py-2 text-sm text-white hover:text-[#D7996C]"
+                  >
+                    Business Plan Competition
+                  </Link>
+                </motion.div>
               </MenuItem>
             </div>
           </MenuItems>
         </Menu>
+
         <Link to="/tech-symphony" className="hover:text-[#D7996C]">
           Tech Symphony
         </Link>
@@ -110,17 +148,19 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed top-0 left-0 w-full h-full bg-[#F2C48D] text-white flex flex-col items-center  transform ${
+        className={`md:hidden fixed top-0 left-0 w-full h-full px-10 bg-[#F2C48D] text-white flex flex-col items-center transform ${
           nav ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300`}
       >
         <button className="absolute top-4 right-4">
           <FaTimes size={30} onClick={handleClick} />
         </button>
-        <ul className="space-y-6 text-2xl mt-40">
+        <ul className="space-y-6 text-2xl my-auto">
           <li onClick={handleClick}>
             <Link to="/">Home</Link>
           </li>
+
+          {/* Tech Genius Dropdown */}
           <li
             className="flex items-center"
             onClick={() => toggleDropdown("Tech Genius")}
@@ -128,15 +168,29 @@ function Navbar() {
             Tech Genius <FaAngleDown className="ml-1" />
           </li>
           {dropdown === "Tech Genius" && (
-            <div className="flex flex-col space-y-4 text-xl">
-              <Link to="/Bootcamp" onClick={handleClick}>
-                FULLSTACK WEB DEV
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: { opacity: 0, y: -10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { staggerChildren: 0.1 },
+                },
+              }}
+              className="flex flex-col space-y-4 text-xl pl-4 mt-2"
+            >
+              <Link to="/bootcamp" onClick={handleClick}>
+                Fullstack Web Development
               </Link>
-              <Link to="/Techpreneur" onClick={handleClick}>
-                TECH ENTREPRENEURSHIP WEBINAR
+              <Link to="/techpreneur" onClick={handleClick}>
+                Tech Entrepreneurship Webinar
               </Link>
-            </div>
+            </motion.div>
           )}
+
+          {/* Championship Dropdown */}
           <li
             className="flex items-center"
             onClick={() => toggleDropdown("Championship")}
@@ -144,20 +198,33 @@ function Navbar() {
             Championship <FaAngleDown className="ml-1" />
           </li>
           {dropdown === "Championship" && (
-            <div className="flex flex-col space-y-4 text-xl">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: { opacity: 0, y: -10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { staggerChildren: 0.1 },
+                },
+              }}
+              className="flex flex-col space-y-4 text-xl pl-4 mt-2"
+            >
               <Link to="/uiux" onClick={handleClick}>
-                UiUx Competiton
+                UI/UX Competition
               </Link>
               <Link to="/business-plan" onClick={handleClick}>
-                Business Plan Competiton
+                Business Plan Competition
               </Link>
-            </div>
+            </motion.div>
           )}
+
           <li onClick={handleClick}>
             <Link to="/tech-symphony">Tech Symphony</Link>
           </li>
           <li onClick={handleClick}>
-            <Link to="/About-Us">About Us</Link>
+            <Link to="/about-us">About Us</Link>
           </li>
         </ul>
       </div>
