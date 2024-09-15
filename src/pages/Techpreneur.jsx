@@ -1,4 +1,4 @@
-import Footer2 from "../components/Footer2";
+import Footer from "../components/FWD/Footer";
 import Navbar from "../components/Navbar";
 import TechpreneurContent from "../components/TechpreneurContent";
 
@@ -7,7 +7,7 @@ export default function Techpreneur() {
     <>
       <Navbar />
       <TechpreneurContent />
-      <Footer2 />
+      <Footer />
     </>
   );
 }

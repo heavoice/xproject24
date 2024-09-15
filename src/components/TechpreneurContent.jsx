@@ -3,76 +3,113 @@ import Batu1 from "../assets/img/Batu (1).png";
 import Batu2 from "../assets/img/Batu (2).png";
 import Pemateri from "../assets/img/pemateri2.png";
 import Maskot from "../assets/img/maskot.png";
-import Poster from "../assets/img/PamfletWebinarNew.jpg"
-import { FaWhatsapp } from "react-icons/fa";
+import Poster from "../assets/img/PamfletWebinarNew.jpg";
+import { AnimatePresence, motion } from "framer-motion";
+import { FaTimes } from "react-icons/fa";
+import { whatsapp } from "../assets";
 
-function UiuxContent() {
-const[openPoster,setOpenPoster]=useState(false)
-
-  const handleClick = () => {
-    window.location.href =
-      " http://unesa.me/PendaftaranWebinarXproject2024";
+function FullstackWebdev({
+  firstlink,
+  firstcp,
+  firstno,
+  secondlink,
+  secondcp,
+  secondno,
+}) {
+  const LinkPendaftaran = () => {
+    window.location.href = "/null";
   };
 
-  const onClick =()=>{
-    setOpenPoster(true)
-  }
-  const handleClose =()=>{
-    setOpenPoster(false)
-  }
+  const [openPoster, setopenPoster] = useState(false);
+
+  const PosterModal = ({ openPoster, setopenPoster }) => {};
 
   return (
-    <div className="bg-image5 w-full h-[705vh] sm:h-[840vh] flex flex-col items-center justify-center">
-      {/* techpreneurship */}
-      <div className="flex flex-col text-center -mt-[90rem] sm:-mt-[90rem] md:-mt-[115rem] lg:-mt-[105rem] xl:-mt-[80rem]">
+    <div className="bg-image5 w-full xs:h-[255rem] sm:h-[300rem] md:h-[370rem] lg:h-[370rem] xl:h-[375rem] flex flex-col items-center justify-center z-10">
+      <div className="relative xs:-translate-y-[42rem] sm:-translate-y-[44rem] md:-translate-y-[63rem] xs:space-y-4">
+        {/* business plan */}
         <h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#0E5D84] whitespace-nowrap py-2"
-          style={{ fontFamily: "Lost Island" }}
+          className="xs:text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#E7CF7F] flex flex-col text-center sm:pb-5"
+          style={{
+            fontFamily: "Lost Island",
+            textShadow: `
+    -4px -4px 0 #0A5E8A, 
+    4px -4px 0 #0A5E8A, 
+    -4px 4px 0 #0A5E8A, 
+    4px 4px 0 #0A5E8A, 
+    -4px 0 0 #0A5E8A, 
+    4px 0 0 #0A5E8A, 
+    0 -4px 0 #0A5E8A, 
+    0 4px 0 #0A5E8A, 
+    -4px -2px 0 #0A5E8A, 
+    -4px 2px 0 #0A5E8A, 
+    4px -2px 0 #0A5E8A, 
+    4px 2px 0 #0A5E8A, 
+    -2px -4px 0 #0A5E8A, 
+    2px -4px 0 #0A5E8A, 
+    -2px 4px 0 #0A5E8A, 
+    2px 4px 0 #0A5E8A, 
+    0 0 0 #0A5E8A
+  `,
+          }}
         >
-          TECH ENTERPRENEURSHIP
-        </h1>
-        <h2
-          className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-[#E7CF7F] py-2"
-          style={{ fontFamily: "Lost Island" }}
-        >
-          WEBINAR
-        </h2>
-        <div className="py-2 sm:py-12 mx-auto">
-          <button
-            onClick={handleClick}
-            className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-4xl text-white rounded-xl border-green-600 bg-green-600 border-2 px-2 sm:px-8 md:px-12 py-1 sm:py-3 md:py-5 flex items-center hover:bg-green-900 hover:border-green-900"
-            style={{ fontFamily: "Lost Island" }}
+          Tech Enterpreneurship <br />{" "}
+          <span
+            style={{
+              color: "#0E5D84",
+              textShadow: `-4px -4px 0 #F4C66B, 
+    4px -4px 0 #F4C66B, 
+    -4px 4px 0 #F4C66B, 
+    4px 4px 0 #F4C66B, 
+    -4px 0 0 #F4C66B, 
+    4px 0 0 #F4C66B, 
+    0 -4px 0 #F4C66B, 
+    0 4px 0 #F4C66B, 
+    -4px -2px 0 #F4C66B, 
+    -4px 2px 0 #F4C66B, 
+    4px -2px 0 #F4C66B, 
+    4px 2px 0 #F4C66B, 
+    -2px -4px 0 #F4C66B, 
+    2px -4px 0 #F4C66B, 
+    -2px 4px 0 #F4C66B, 
+    2px 4px 0 #F4C66B, 
+    0 0 0 #F4C66B`,
+            }}
           >
-            Daftar Sekarang
-          </button>
-        </div>
+            Webinar
+          </span>
+        </h1>
+        <button
+          onClick={LinkPendaftaran}
+          className="mx-auto transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl text-white rounded-xl border-green-600 bg-green-600 border-2 px-2 sm:px-8 md:px-9 py-1 sm:py-3 md:py-4 flex items-center hover:bg-green-900 hover:border-green-900"
+          style={{ fontFamily: "Lost Island" }}
+        >
+          Daftar Sekarang
+        </button>
       </div>
-      {/* Overview */}
-      <div className="translate-y-[17rem] sm:translate-y-[28rem] flex flex-col justify-center z-10">
+      {/* overview */}
+      <div className="relative xs:-translate-y-[20rem] sm:-translate-y-[13rem] md:-translate-y-[23rem] z-10">
         <h1
-          className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#523D31] rounded-xl px-16 py-4"
+          className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#523D31] rounded-xl xs:px-4 px-16 xs:py-2 py-4"
           style={{ fontFamily: "Lost Island" }}
         >
           Overview
         </h1>
       </div>
-      <div className="w-[70%] xl:w-[1096px] h-[310px] sm:h-[514px] bg-[#F5F2CB] rounded-xl translate-y-[15.5rem] sm:translate-y-[26rem] p-5 pt-7 md:p-9 sm:p-16 lg:p-20">
-     
-        <img
-          src={Batu2}
-          className="absolute -top-16 -left-11 sm:-top-16 sm:-left-12 md:-top-20 md:-left-14 lg:-top-28 lg:-left-20 xl:-top-32 xl:-left-24 w-[120px] sm:w-[120px] md:w-[150px] lg:w-[200px] xl:w-[240px]"
-        />
-        <img
-          src={Batu1}
-          className="absolute -bottom-16 -right-11 sm:-bottom-16 sm:-right-12 md:-bottom-20 md:-right-14 lg:-bottom-28 lg:-right-20 xl:-bottom-32 xl:-right-24 w-[120px] sm:w-[120px] md:w-[150px] lg:w-[200px] xl:w-[240px]"
-        />
-        <h1
-          className="text-2xl sm:text-3xl lg:text-5xl text-[#0A5E8A]"
-          style={{ fontFamily: "Lost Island" }}
+      <h2
+        className="xs:text-xl xs:py-5 xs:px-4 sm:py-10 sm:px-5 lg:py-14 lg:px-7  text-justify w-[85%] h-[332px] lg:h-[466px] relative bg-[#F5F2CB] border-[#7F5238] border-b-8 border-r-8 rounded-xl xs:-translate-y-[21rem] sm:-translate-y-[15rem] md:-translate-y-[25rem]"
+        style={{ fontFamily: "Lost Island" }}
+      >
+        <span className="text-[#0A5E8A] sm:text-2xl md:text-3xl lg:text-5xl">
+          About
+        </span>{" "}
+        <span className="text-[#D25F5F] sm:text-2xl md:text-3xl lg:text-5xl">
+          Webinar
+        </span>
+        <p
+          className="xs:pt-2 xs:text-xs lg:text-2xl lg:pt-2"
+          style={{ fontFamily: "Poppins" }}
         >
-          About <span className="text-[#D25F5F]">Webinar</span>
-        </h1>
-        <p className="text-xs sm:text-sm lg:text-lg xl:text-2xl text-justify pt-1 lg:pt-4 ">
           Webinar Tech Enterpreneurship adalah sebuah webinar yang dilakukan
           secara online yang fokus pada eksplorasi dan pemahaman tentang
           perkembangan teknologi terkini dalam konteks bisnis. Webinar ini
@@ -82,172 +119,252 @@ const[openPoster,setOpenPoster]=useState(false)
           dengan mengidentifikasi peluang dan tantangan terkait teknologi
           inovasi bisnis.
         </p>
-      </div>
+        <img
+          src={Batu2}
+          className="absolute -top-16 xs:-left-5 sm:-top-20 sm:-left-8 md:-top-24 md:-left-14 lg:-top-32 lg:-left-20 xl:-top-40 xl:-left-24 xs:w-[100px] sm:w-[140px] md:w-[150px] lg:w-[200px] xl:w-[240px]"
+        />
+        <img
+          src={Batu1}
+          className="absolute -bottom-16 xs:-right-5 sm:-bottom-20 sm:-right-12 md:-bottom-24 md:-right-14 lg:-bottom-32 lg:-right-20 xl:-bottom-40 xl:-right-24 xs:w-[100px] sm:w-[140px] md:w-[150px] lg:w-[200px] xl:w-[240px]"
+        />
+      </h2>
       {/* detail */}
-      <div className="translate-y-[25rem] sm:translate-y-[50rem] flex flex-col justify-center z-10">
+      <div className="xs:-translate-y-[7rem] sm:-translate-y-[8rem]">
         <h1
-          className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#523D31] rounded-xl px-16 py-4"
+          className="lg:mx-[20rem] relative xs:flex xs:flex-col sm:flex-row z-10 xs:mb-12 sm:mb-12 text-xs sm:text-xl md:text-base lg:text-2xl text-white text-center bg-[#523D31] rounded-xl xs:py-2 py-4"
           style={{ fontFamily: "Lost Island" }}
         >
           Detail
         </h1>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 translate-y-[25rem] sm:translate-y-[50rem] flex-col justify-center z-10 pt-10 gap-12">
-        <div>
-          <h1
-            className="text-xs sm:text-xl md:text-base lg:text-2xl text-center text-white bg-[#7F5238] rounded-xl px-16 py-4"
-            style={{ fontFamily: "Lost Island" }}
-          >
-            Pelaksanaan
-          </h1>
-          <p className="text-xs sm:text-xl md:text-base lg:text-2xl text-center text-[#7F5238] bg-[#F5F2CB] rounded-xl px-8 sm:px-16 py-4 w-full overflow-x-auto translate-y-4">
-            Online <br />
-            (Via Zoom)
-          </p>
-        </div>
-        <div>
-          <h1
-            className="text-xs sm:text-xl md:text-base lg:text-2xl text-center text-white bg-[#7F5238] rounded-xl px-16 py-4"
-            style={{ fontFamily: "Lost Island" }}
-          >
-            Biaya
-          </h1>
-          <p className="text-xs sm:text-xl md:text-base lg:text-2xl text-center text-[#7F5238] bg-[#F5F2CB] rounded-xl px-8 sm:px-16 py-4 w-full overflow-x-auto translate-y-4">
-            Rp. 5.000 <br /> <span className="text-[#F5F2CB]">baris</span>
-          </p>
-        </div>
-        <div>
-          <h1
-            className="text-xs sm:text-xl md:text-base lg:text-2xl text-center text-white bg-[#7F5238] rounded-xl px-16 py-4"
-            style={{ fontFamily: "Lost Island" }}
-          >
-            Waktu
-          </h1>
-          <p className="text-xs sm:text-xl md:text-base lg:text-2xl text-center text-[#7F5238] bg-[#F5F2CB] rounded-xl px-8 sm:px-16 py-4 w-full overflow-x-auto translate-y-4">
-            14 September 2024 <br /> 09.00 – 12.00
-          </p>
+        <div className="space-y-4 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8 text-center">
+          <div className="space-y-4">
+            <h1
+              className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-8 sm:px-11 xs:py-2 py-4"
+              style={{ fontFamily: "Lost Island" }}
+            >
+              Pelaksanaan
+            </h1>
+            <p className="text-xs text-center sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:py-2 py-4">
+              Online <br /> (Via Zoom)
+            </p>
+          </div>
+          <div className="space-y-4">
+            <h1
+              className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-8 sm:px-11 xs:py-2 py-4"
+              style={{ fontFamily: "Lost Island" }}
+            >
+              Biaya
+            </h1>
+            <p className="text-xs text-center sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:py-2 py-4">
+              Rp.5.000
+            </p>
+          </div>
+          <div className="space-y-4">
+            <h1
+              className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-8 sm:px-11 xs:py-2 py-4"
+              style={{ fontFamily: "Lost Island" }}
+            >
+              Pelaksanaan
+            </h1>
+            <p className="text-xs text-center sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl lg:px-8 xs:py-2 py-4">
+              14 September 2024 <br /> 09.00 – 12.00
+            </p>
+          </div>
         </div>
       </div>
       {/*pemateri*/}
-      <div className="translate-y-[38rem] sm:translate-y-[53rem] flex flex-col justify-center z-10">
+      <div className="xs:-translate-y-[27rem] sm:-translate-y-[47rem]">
+        <div className="translate-y-[35rem] sm:translate-y-[50rem] flex flex-col justify-center z-10 mx-auto">
+          <h1
+            className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#523D31] rounded-xl w-fit px-16 py-4 mx-auto"
+            style={{ fontFamily: "Lost Island" }}
+          >
+            Pemateri
+          </h1>
+        </div>
+        <img
+          src={Pemateri}
+          className="items-center w-[382px] md:w-[765px] h-[344px] md:h-[687px] translate-y-[33rem] sm:translate-y-[50rem]"
+        />
         <h1
-          className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#523D31] rounded-xl px-16 py-4"
+          className="text-xs sm:text-xl md:text-base lg:text-2xl text-center text-white bg-[#7F5238] rounded-xl w-fit px-10 py-2 translate-y-[28rem] sm:translate-y-[45rem] z-20 relative mx-auto"
           style={{ fontFamily: "Lost Island" }}
         >
           Pemateri
         </h1>
+        <h1 className="text-lg sm:text-xl md:text-base lg:text-3xl font-semibold text-center text-[#7F5238] bg-[#F5F2CB] rounded-xl w-fit px-8 sm:px-16 py-4 translate-y-[27.5rem] sm:translate-y-[44rem] mx-auto">
+          Danny Dwi Cahyono
+        </h1>
       </div>
-      <img
-        src={Pemateri}
-        className="items-center w-[382px] sm:w-[1481px] h-[382px] md:h-[721px] xl:h-[1179px] translate-y-[33rem] sm:translate-y-[50rem]"
-      />
-      <h1
-        className="text-xs sm:text-xl md:text-base lg:text-2xl text-center text-white bg-[#7F5238] rounded-xl px-10 py-2 translate-y-[28rem] sm:translate-y-[45rem] z-10"
-        style={{ fontFamily: "Lost Island" }}
-      >
-        Pemateri
-      </h1>
-      <p className="text-lg sm:text-xl md:text-base lg:text-3xl font-semibold text-center text-[#7F5238] bg-[#F5F2CB] rounded-xl px-8 sm:px-16 py-4 translate-y-[27.5rem] sm:translate-y-[44rem]">
-        Thabed Tholib Baladraf
-      </p>
-      {/*timeline*/}
-      <div className="translate-y-[35rem] sm:translate-y-[50rem] flex flex-col justify-center z-10">
+      {/* timeline */}
+      <div className="xs:translate-y-[13rem] sm:translate-y-[7rem] ">
         <h1
-          className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#523D31] rounded-xl px-16 py-4"
+          className="relative xs:flex xs:flex-col z-10 xs:mb-12 sm:mb-12 text-xs sm:text-xl md:text-base lg:text-2xl text-white text-center bg-[#523D31] rounded-xl xs:px-8 sm:px-20 xs:py-2 py-4"
           style={{ fontFamily: "Lost Island" }}
         >
           Timeline
         </h1>
-      </div>
-      <div className="bg-[#D7996C] w-[8.5px] sm:w-[17px] h-[203px] sm:h-[283px] translate-y-[40rem] sm:translate-y-[55rem]">
-        <div className="bg-[#7F5238] w-[32px] sm:w-[43.17px] h-[32px] sm:h-[43.17px] rounded-full translate-y-[11rem] sm:translate-y-[15.5rem] -translate-x-[12px]"></div>
-        <div className="bg-[#7F5238] w-[32px] sm:w-[43.17px] h-[32px] sm:h-[43.17px] rounded-full -translate-y-[2rem] sm:-translate-y-[3.5rem] -translate-x-[12px]"></div>
-      </div>
-      <div className="translate-y-[24rem] md:translate-y-[44.5rem] sm:translate-y-[45.5rem] lg:translate-y-[47.5rem]">
-        <h1
-          className="text-xs sm:text-sm md:text-base lg:text-2xl text-center text-white bg-[#7F5238] rounded-xl px-8 sm:px-9 py-4 translate-y-[9.5rem] sm:translate-y-[3rem] lg:-translate-y-[0.5rem] -translate-x-[8rem] sm:-translate-x-[11rem] lg:-translate-x-[16rem]"
-          style={{ fontFamily: "Lost Island" }}
-        >
-          Pelaksanaan Webinar
-        </h1>
-        <h1 className="text-sm sm:text-sm md:text-base lg:text-2xl font-semibold text-center text-[#7F5238] bg-[#F5F2CB] rounded-xl px-8 sm:px-12 py-4 translate-y-[10rem] sm:translate-y-[3.5rem] lg:-translate-y-[0rem] -translate-x-[8rem] sm:-translate-x-[11rem] lg:-translate-x-[16rem]">
-          14 September 2024
-        </h1>
-      </div>
-      <div className="translate-y-[11.5rem] md:translate-y-[15rem] sm:translate-y-[15.5rem] lg:translate-y-[18rem]">
-        <h1
-          className="text-xs sm:text-sm md:text-base lg:text-2xl text-center text-white bg-[#7F5238] rounded-xl px-8 sm:px-9 py-4 translate-y-[9.5rem] sm:translate-y-[14.5rem] lg:translate-y-[10.5rem] translate-x-[8rem] sm:translate-x-[11.5rem] lg:translate-x-[17.5rem]"
-          style={{ fontFamily: "Lost Island" }}
-        >
-          Pendaftaran Webinar
-        </h1>
-        <h1 className="text-sm sm:text-sm md:text-base lg:text-2xl font-semibold text-center text-[#7F5238] bg-[#F5F2CB] rounded-xl px-8 sm:px-12 py-4 translate-y-[10rem] sm:translate-y-[15rem] lg:translate-y-[11rem] translate-x-[8rem] sm:translate-x-[11.5rem] lg:translate-x-[17.5rem]">
-          27 Agutsus - 12 September 2024
-        </h1>
-      </div>
-      {/*silabus materi */}
-      
-      
-      
-      {/*contact person*/}
-      <h1
-        className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#523D31] rounded-xl px-16 py-4 translate-y-[58rem]"
-        style={{ fontFamily: "Lost Island" }}
-      >
-        Contact Person
-      </h1>
-      <div className="w-fit h-fit bg-[#F5F2CB] text-center rounded-xl translate-y-[59.5rem] sm:translate-y-[61rem] p-9 sm:p-16 lg:p-20 space-y-4">
-        <div className="flex items-center justify-center text-2xl sm:text-3xl lg:text-5xl text-[#523D31]">
-          <FaWhatsapp className="mr-2 sm:mr-4" />
-          <h1 style={{ fontFamily: "Lost Island" }}> 0813-848-4126 (James)</h1>
-        </div>
-        <div className="flex items-center justify-center text-2xl sm:text-3xl lg:text-5xl text-[#523D31] -translate-x-[0.8rem] sm:-translate-x-[1.0rem] md:-translate-x-[1.0rem] lg:-translate-x-[1.6rem]">
-          <FaWhatsapp className="mr-2 sm:mr-4" />
-          <h1 style={{ fontFamily: "Lost Island" }}> 0812-8076-1616 (Hilmi)</h1>
-        </div>
-      </div>
-      {/*daftar skrg & poster*/}
-      <div className="flex flex-col lg:flex-row justify-center items-center px-4 py-6 bg-white border-4 border-white w-[90%] max-w-[1240px] h-auto lg:h-[643px] rounded-xl bg-opacity-40 translate-y-[70rem]">
-        <div className="place-content-center mx-20 lg:mb-0">
-          <img
-            src={Maskot}
-            className="w-[150px] sm:w-[300px] h-[200px] sm:h-[400px] animate-wiggle"
-          />
-        </div>
-        <div
-          className="text-xl sm:text-2xl lg:text-7xl text-white text-center lg:text-left lg:w-1/2"
-          style={{ fontFamily: "Lost Island" }}
-        >
-          Gimana Tertarik? <br /> Yuk daftar!
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 justify-center lg:justify-start mt-10">
-            <a className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]">
-              Daftar Sekarang
-            </a>
-            <button className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#486D24] bg-[#486D24] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#293f16] hover:border-[#293f16]" onClick={onClick}>
-              Poster
-            </button>
+        <div className="mx-auto relative bg-[#D7996C] w-[8.5px] sm:w-[17px] xs:h-[110px] sm:h-[235px] xs:space-y-20 sm:space-y-44">
+          {/* timeline 1 */}
+          <div className="relative bottom-1 -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
+            <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
+              <h1
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.1rem] xs:py-2 sm:px-7 sm:py-2 md:px-8 text-nowrap"
+                style={{ fontFamily: "Lost Island" }}
+              >
+                Pendaftaran & Pembayaran
+              </h1>
+            </div>
+            <div className="absolute xs:left-8 xs:top-10 sm:left-16 sm:top-20 md:top-[4.5rem] lg:left-16 lg:top-24 text-center">
+              <h1
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-14 sm:py-2 lg:px-16 text-nowrap"
+                style={{ fontFamily: "Lost Island" }}
+              >
+                27 Agustus - 12 <br />
+                September 2024
+              </h1>
+            </div>
+          </div>
+          {/* timeline 2 */}
+          <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
+            <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
+              <h1
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 md:px-[1.85rem] text-nowrap"
+                style={{ fontFamily: "Lost Island" }}
+              >
+                Pelaksanaan Webinar
+              </h1>
+            </div>
+            <div className="absolute xs:right-8 xs:top-9 sm:right-16 sm:top-14 md:top-[3rem] lg:right-16 lg:top-16 text-center">
+              <h1
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[3.35rem] sm:py-2 lg:px-[4rem] text-nowrap"
+                style={{ fontFamily: "Lost Island" }}
+              >
+                14 September 2024
+              </h1>
+            </div>
           </div>
         </div>
       </div>
-      {openPoster && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative">
-            <button 
-              onClick={handleClose} 
-              className="absolute top-0 right-2 md:top-0 md:-right-9 text-white md:text-5xl text-7xl font-bold hover:text-gray-400"
+
+      {/*contact person*/}
+      <div className="xs:translate-y-[29rem] sm:translate-y-[35rem]">
+        <div className="w-full md:w-fit h-full px-6 md:px-[8.2rem] pt-20 pb-20 md:pb-36 relative  mx-auto">
+          <div className="w-[160px] lg:w-[240px] xl:w-[270px] text-center mx-auto">
+            <h1
+              className=" md:text-xl lg:text-2xl text-white bg-[#523D31] rounded-xl  py-4 "
+              style={{ fontFamily: "Lost Island" }}
             >
-              &times;
-            </button>
-            <img 
-              src={Poster} 
-              alt="Popup Image" 
-              className=" md:max-w-[30rem] max-h-full object-contain"
+              Contact
+            </h1>
+          </div>
+          <div className="mt-10 border-2 border-white py-12 md:py-16 px-7 md:px-20 rounded-lg bg-[#F5F2CB]">
+            <a
+              className="flex gap-5 w-full mb-8"
+              target="_blank"
+              href={firstlink}
+              rel="noopener noreferrer"
+              style={{ fontFamily: "Lost Island" }}
+            >
+              <img src={whatsapp} alt="" />
+              <div className="text-[#523D31]">
+                <h1
+                  className="text-lg md:text-[2rem] font-semibold "
+                  style={{ fontFamily: "Lost Island" }}
+                >
+                  {firstno ? firstno : "0858-5672-0449"} (
+                  {firstcp ? firstcp : "Amalia"})
+                </h1>
+              </div>
+            </a>
+            <a
+              className="flex gap-5 w-full"
+              target="_blank"
+              href={secondlink}
+              rel="noopener noreferrer"
+              style={{ fontFamily: "Lost Island" }}
+            >
+              <img src={whatsapp} alt="" />
+              <div className="text-[#523D31]">
+                <h1
+                  className="text-lg md:text-[2rem] font-semibold "
+                  style={{ fontFamily: "Lost Island" }}
+                >
+                  {secondno ? secondno : "0858-1132-6241"} (
+                  {secondcp ? secondcp : "Sarah Nabila"})
+                </h1>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      {/* daftar, poster & guidebook */}
+      <div className="xs:translate-y-[30rem] sm:translate-y-[45rem]">
+        <div className="mx-auto flex flex-col lg:flex-row justify-center items-center px-4 py-6 bg-white border-4 border-white w-[90%] max-w-[1240px] h-auto lg:h-[643px] rounded-xl bg-opacity-40">
+          <div className="place-content-center mx-20 lg:mb-0">
+            <img
+              src={Maskot}
+              className="xs:w-[150px] sm:w-[300px] xs:h-[150px] sm:h-[300px] animate-wiggle"
             />
           </div>
+          <div
+            className="text-xl sm:text-2xl lg:text-7xl text-white text-center lg:text-left lg:w-fit"
+            style={{ fontFamily: "Lost Island" }}
+          >
+            Gimana Tertarik? <br /> Yuk daftar!
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 justify-center lg:justify-start mt-10 ">
+              <button
+                onClick={LinkPendaftaran}
+                className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]"
+              >
+                Daftar Sekarang
+              </button>
+              <button
+                onClick={() => setopenPoster(true)}
+                className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#486D24] bg-[#486D24] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#293f16] hover:border-[#293f16]"
+              >
+                Poster
+              </button>
+              <PosterModal
+                openPoster={openPoster}
+                setopenPoster={setopenPoster}
+              />
+              <AnimatePresence>
+                {openPoster && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    onClick={() => setopenPoster(false)}
+                    className="bg-black/20 backdrop-blur fixed inset-0 z-50 grid rounded-lg place-items-center cursor-pointer xs:-top-4 xs:right-4 xs:left-4 sm:right-6 sm:-left-2 lg:right-11 lg:left-4"
+                  >
+                    <button
+                      onClick={() => setopenPoster(false)}
+                      className="absolute xs:top-5 xs:right-4 sm:top-5 sm:right-4 text-white text-2xl hover:text-gray-300 focus:outline-none"
+                    >
+                      <FaTimes />
+                    </button>
+                    <motion.div
+                      initial={{ scale: 0, rotate: "12.5deg" }}
+                      animate={{ scale: 1, rotate: "0deg" }}
+                      exit={{ scale: 0, rotate: "0deg" }}
+                      onClick={(e) => e.stopPropagation()}
+                      className="bg-[#F2C48D] text-white p-2 rounded-lg shadow-xl cursor-default relative overflow-hidden"
+                    >
+                      <img
+                        src={Poster}
+                        className="xs:w-[200px] sm:w-[340px] lg:w-[400px]"
+                      />
+                    </motion.div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }
 
-export default UiuxContent;
+export default FullstackWebdev;
