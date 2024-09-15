@@ -272,8 +272,8 @@ function FullstackWebdev({
                   className="text-lg md:text-[2rem] font-semibold "
                   style={{ fontFamily: "Lost Island" }}
                 >
-                  {firstno ? firstno : "0858-5672-0449"} (
-                  {firstcp ? firstcp : "Amalia"})
+                  {firstno ? firstno : "0812-8076-1616"} (
+                  {firstcp ? firstcp : "Hilmi Alwan"})
                 </h1>
               </div>
             </a>
