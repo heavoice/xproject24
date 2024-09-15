@@ -17,7 +17,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/business-plan" element={<BPC />} />
-          <Route path="/uiux" element={<Uiux />} />
+          <Route path="/uiux-competition" element={<Uiux />} />
           <Route path="/business" element={<Business />} />
           <Route path="/bootcamp" element={<Bootcamp />} />
           <Route path="/techpreneur" element={<Techpreneur />} />

@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
 import Logo from "../assets/img/logoXP.png";
 import { FaBars, FaTimes, FaAngleDown } from "react-icons/fa";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { Link } from "react-router-dom";
 
-// Framer Motion Variants for Staggered Animation
 const dropdownVariants = {
   hidden: { opacity: 0, y: -10 },
   visible: (i) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.1 }, // Add delay for staggered effect
+    transition: { delay: i * 0.1 },
   }),
 };
 
@@ -53,14 +52,14 @@ function Navbar() {
                 <motion.div
                   initial="hidden"
                   animate="visible"
-                  custom={0} // Stagger index 0
+                  custom={0}
                   variants={dropdownVariants}
                 >
                   <Link
                     to="/Bootcamp"
                     className="block px-4 py-2 text-sm text-white hover:text-[#D7996C]"
                   >
-                    FULLSTACK WEB DEV
+                    Fullstack Web Dev
                   </Link>
                 </motion.div>
               </MenuItem>
@@ -68,14 +67,14 @@ function Navbar() {
                 <motion.div
                   initial="hidden"
                   animate="visible"
-                  custom={1} // Stagger index 1
+                  custom={1}
                   variants={dropdownVariants}
                 >
                   <Link
                     to="/Techpreneur"
                     className="block px-4 py-2 text-sm text-white hover:text-[#D7996C]"
                   >
-                    TECH ENTREPRENEURSHIP WEBINAR
+                    Tech Enterpreneurship Webinar
                   </Link>
                 </motion.div>
               </MenuItem>
@@ -103,7 +102,7 @@ function Navbar() {
                   variants={dropdownVariants}
                 >
                   <Link
-                    to="/Uiux"
+                    to="/uiux-competition"
                     className="block px-4 py-2 text-sm text-white hover:text-[#D7996C]"
                   >
                     UI/UX Competition
@@ -211,7 +210,7 @@ function Navbar() {
               }}
               className="flex flex-col space-y-4 text-xl pl-4 mt-2"
             >
-              <Link to="/uiux" onClick={handleClick}>
+              <Link to="/uiux-competition" onClick={handleClick}>
                 UI/UX Competition
               </Link>
               <Link to="/business-plan" onClick={handleClick}>

@@ -7,6 +7,8 @@ import bronzeTrophy from "../../assets/img/tropy-coklat.png";
 import Maskot from "../../assets/img/maskot.png";
 import Poster from "../../assets/img/PamfletWebinarNew.jpg";
 import { whatsapp } from "../../assets";
+import { AnimatePresence, motion } from "framer-motion";
+import { FaTimes } from "react-icons/fa";
 
 function Content({
   firstlink,
@@ -16,18 +18,47 @@ function Content({
   secondcp,
   secondno,
 }) {
-  const [openPoster, setOpenPoster] = useState(false);
-
   const LinkPendaftaran = () => {
     window.location.href = "https://unesa.me/PendaftaranDanPengumpulanBMC";
   };
 
-  const onClick = () => {
-    setOpenPoster(true);
+  const [openPoster, setopenPoster] = useState(false);
+
+  const PosterModal = ({ openPoster, setopenPoster }) => {
+    return (
+      <AnimatePresence>
+        {openPoster && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setopenPoster(false)}
+            className="bg-black/20 backdrop-blur fixed inset-0 z-50 grid rounded-lg place-items-center cursor-pointer xs:-top-4 xs:right-4 xs:left-4 sm:right-6 sm:-left-2 lg:right-11 lg:left-4"
+          >
+            <button
+              onClick={() => setopenPoster(false)}
+              className="absolute xs:top-5 xs:right-4 sm:top-5 sm:right-4 text-white text-2xl hover:text-gray-300 focus:outline-none"
+            >
+              <FaTimes />
+            </button>
+            <motion.div
+              initial={{ scale: 0, rotate: "12.5deg" }}
+              animate={{ scale: 1, rotate: "0deg" }}
+              exit={{ scale: 0, rotate: "0deg" }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-[#F2C48D] text-white p-2 rounded-lg shadow-xl cursor-default relative overflow-hidden"
+            >
+              <img
+                src={Poster}
+                className="xs:w-[200px] sm:w-[340px] lg:w-[400px]"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    );
   };
-  const handleClose = () => {
-    setOpenPoster(false);
-  };
+
   return (
     <div className="bg-image5 w-full xs:h-[355rem] sm:h-[450rem] lg:h-[445rem] flex flex-col items-center justify-center z-10">
       <div className="relative xs:-translate-y-[42rem] sm:-translate-y-[44rem] md:-translate-y-[63rem] xs:space-y-4">
@@ -212,11 +243,11 @@ function Content({
             </div>
             <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[2.1rem] sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 14 September – <br />
-                24 Oktober 2024
+                20 Oktober 2024
               </h1>
             </div>
           </div>
@@ -232,7 +263,7 @@ function Content({
             </div>
             <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[2.35rem] sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 31 Oktober 2024
@@ -251,7 +282,7 @@ function Content({
             </div>
             <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-[2.15rem] sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 1 – 9 November 2024
@@ -273,7 +304,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                10 – 14 November 2024
+                10 – 16 November 2024
               </h1>
             </div>
           </div>
@@ -289,7 +320,7 @@ function Content({
             </div>
             <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-10 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 20 November 2024
@@ -308,7 +339,7 @@ function Content({
             </div>
             <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-[1.35rem] xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 22 – 25 November 2024
@@ -325,7 +356,7 @@ function Content({
                 Final
               </h1>
             </div>
-            <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-12 lg:left-16 lg:top-14 text-center">
+            <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-14 lg:left-16 lg:top-14 text-center">
               <h1
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
@@ -346,7 +377,7 @@ function Content({
             </div>
             <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-[1.35rem] xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
                 1 Desember 2024
@@ -484,13 +515,13 @@ function Content({
           </div>
         </div>
       </div>
-      {/* daftar & poster */}
+      {/* daftar, poster & guidebook */}
       <div className="xs:translate-y-[30rem] sm:translate-y-[45rem]">
         <div className="mx-auto flex flex-col lg:flex-row justify-center items-center px-4 py-6 bg-white border-4 border-white w-[90%] max-w-[1240px] h-auto lg:h-[643px] rounded-xl bg-opacity-40">
           <div className="place-content-center mx-20 lg:mb-0">
             <img
               src={Maskot}
-              className="w-[150px] sm:w-[300px] h-[200px] sm:h-[400px] animate-wiggle"
+              className="xs:w-[150px] sm:w-[300px] xs:h-[150px] sm:h-[300px] animate-wiggle"
             />
           </div>
           <div
@@ -501,36 +532,26 @@ function Content({
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 justify-center lg:justify-start mt-10 ">
               <button
                 onClick={LinkPendaftaran}
-                className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]"
+                className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]"
               >
                 Daftar Sekarang
               </button>
+              <button className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]">
+                Guidebook
+              </button>
               <button
-                className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white rounded-xl border-[#486D24] bg-[#486D24] px-4 py-2 sm:px-8 sm:py-3 md:px-10 md:py-5 flex items-center justify-center hover:bg-[#293f16] hover:border-[#293f16]"
-                onClick={onClick}
+                onClick={() => setopenPoster(true)}
+                className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#486D24] bg-[#486D24] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#293f16] hover:border-[#293f16]"
               >
                 Poster
               </button>
-            </div>
-          </div>
-        </div>
-        {openPoster && (
-          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-            <div className="relative">
-              <button
-                onClick={handleClose}
-                className="absolute top-0 right-2 md:top-0 md:-right-9 text-white md:text-5xl text-7xl font-bold hover:text-gray-400"
-              >
-                &times;
-              </button>
-              <img
-                src={Poster}
-                alt="Popup Image"
-                className=" md:max-w-[30rem] max-h-full= object-contain"
+              <PosterModal
+                openPoster={openPoster}
+                setopenPoster={setopenPoster}
               />
             </div>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
