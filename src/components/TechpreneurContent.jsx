@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
 import { whatsapp } from "../assets";
 
-function FullstackWebdev({
+function TechpreneurWebinar({
   firstlink,
   firstcp,
   firstno,
@@ -367,4 +367,4 @@ function FullstackWebdev({
   );
 }
 
-export default FullstackWebdev;
+export default TechpreneurWebinar;

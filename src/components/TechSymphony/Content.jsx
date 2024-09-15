@@ -26,7 +26,7 @@ function Content({
   };
   return (
     <div className="bg-image5 w-full xs:h-[355rem] sm:h-[450rem] lg:h-[205rem] flex flex-col items-center justify-center z-10">
-      <div className="relative xs:-translate-y-[42rem] sm:-translate-y-[44rem] md:-translate-y-[63rem] xs:space-y-4">
+      <div className="relative xs:-translate-y-[144rem] sm:-translate-y-[44rem] md:-translate-y-[63rem] xs:space-y-4">
         {/* tech symphony */}
         <h1
           className="xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#E7CF7F] flex flex-col text-center sm:pb-5"
@@ -113,7 +113,7 @@ function Content({
         </button>
       </div>
       {/* overview */}
-      <div className="relative xs:-translate-y-[20rem] sm:-translate-y-[13rem] md:-translate-y-[23rem] z-10">
+      <div className="relative xs:-translate-y-[117rem] sm:-translate-y-[13rem] md:-translate-y-[23rem] z-10">
         <h1
           className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#523D31] rounded-xl xs:px-4 px-16 xs:py-2 py-4"
           style={{ fontFamily: "Lost Island" }}
@@ -122,7 +122,7 @@ function Content({
         </h1>
       </div>
       <h2
-        className="xs:text-xl xs:py-5 xs:px-4 sm:py-10 sm:px-5 lg:py-14 lg:px-7  text-justify w-[85%] h-[332px] lg:h-[466px] relative bg-[#F5F2CB] border-[#7F5238] border-b-8 border-r-8 rounded-xl xs:-translate-y-[21rem] sm:-translate-y-[15rem] md:-translate-y-[25rem]"
+        className="xs:text-xl xs:py-5 xs:px-4 sm:py-10 sm:px-5 lg:py-14 lg:px-7  text-justify w-[85%] h-[462px] lg:h-[466px] relative bg-[#F5F2CB] border-[#7F5238] border-b-8 border-r-8 rounded-xl xs:-translate-y-[118rem] sm:-translate-y-[15rem] md:-translate-y-[25rem]"
         style={{ fontFamily: "Lost Island" }}
       >
         <span className="text-[#0A5E8A] sm:text-2xl md:text-3xl lg:text-5xl">
