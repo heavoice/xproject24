@@ -24,40 +24,7 @@ function Content({
 
   const [openPoster, setopenPoster] = useState(false);
 
-  const PosterModal = ({ openPoster, setopenPoster }) => {
-    return (
-      <AnimatePresence>
-        {openPoster && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setopenPoster(false)}
-            className="bg-black/20 backdrop-blur fixed inset-0 z-50 grid rounded-lg place-items-center cursor-pointer xs:-top-4 xs:right-4 xs:left-4 sm:right-6 sm:-left-2 lg:right-11 lg:left-4"
-          >
-            <button
-              onClick={() => setopenPoster(false)}
-              className="absolute xs:top-5 xs:right-4 sm:top-5 sm:right-4 text-white text-2xl hover:text-gray-300 focus:outline-none"
-            >
-              <FaTimes />
-            </button>
-            <motion.div
-              initial={{ scale: 0, rotate: "12.5deg" }}
-              animate={{ scale: 1, rotate: "0deg" }}
-              exit={{ scale: 0, rotate: "0deg" }}
-              onClick={(e) => e.stopPropagation()}
-              className="bg-[#F2C48D] text-white p-2 rounded-lg shadow-xl cursor-default relative overflow-hidden"
-            >
-              <img
-                src={Poster}
-                className="xs:w-[200px] sm:w-[340px] lg:w-[400px]"
-              />
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    );
-  };
+  const PosterModal = ({ openPoster, setopenPoster }) => {};
 
   return (
     <div className="bg-image5 w-full xs:h-[355rem] sm:h-[450rem] lg:h-[445rem] flex flex-col items-center justify-center z-10">
@@ -549,6 +516,36 @@ function Content({
                 openPoster={openPoster}
                 setopenPoster={setopenPoster}
               />
+              <AnimatePresence>
+                {openPoster && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    onClick={() => setopenPoster(false)}
+                    className="bg-black/20 backdrop-blur fixed inset-0 z-50 grid rounded-lg place-items-center cursor-pointer xs:-top-4 xs:right-4 xs:left-4 sm:right-6 sm:-left-2 lg:right-11 lg:left-4"
+                  >
+                    <button
+                      onClick={() => setopenPoster(false)}
+                      className="absolute xs:top-5 xs:right-4 sm:top-5 sm:right-4 text-white text-2xl hover:text-gray-300 focus:outline-none"
+                    >
+                      <FaTimes />
+                    </button>
+                    <motion.div
+                      initial={{ scale: 0, rotate: "12.5deg" }}
+                      animate={{ scale: 1, rotate: "0deg" }}
+                      exit={{ scale: 0, rotate: "0deg" }}
+                      onClick={(e) => e.stopPropagation()}
+                      className="bg-[#F2C48D] text-white p-2 rounded-lg shadow-xl cursor-default relative overflow-hidden"
+                    >
+                      <img
+                        src={Poster}
+                        className="xs:w-[200px] sm:w-[340px] lg:w-[400px]"
+                      />
+                    </motion.div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           </div>
         </div>

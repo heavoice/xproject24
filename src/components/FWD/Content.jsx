@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import Batu1 from "../../assets/img/Batu (1).png";
 import Batu2 from "../../assets/img/Batu (2).png";
-import goldTrophy from "../../assets/img/tropy-emas.png";
-import silverTrophy from "../../assets/img/tropy-perak.png";
-import bronzeTrophy from "../../assets/img/tropy-coklat.png";
+import Pemateri from "../../assets/img/pemateri1.png";
 import Maskot from "../../assets/img/maskot.png";
-import Poster from "../../assets/img/PamfletWebinarNew.jpg";
-import { whatsapp } from "../../assets";
+import Poster from "../../assets/img/PamfletBootcampNew.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
+import { whatsapp } from "../../assets";
 
-function Content({
+function FullstackWebdev({
   firstlink,
   firstcp,
   firstno,
@@ -19,7 +17,7 @@ function Content({
   secondno,
 }) {
   const LinkPendaftaran = () => {
-    window.location.href = "https://unesa.me/PendaftaranDanPengumpulanUIUX";
+    window.location.href = "/null";
   };
 
   const [openPoster, setopenPoster] = useState(false);
@@ -27,7 +25,7 @@ function Content({
   const PosterModal = ({ openPoster, setopenPoster }) => {};
 
   return (
-    <div className="bg-image5 w-full xs:h-[355rem] sm:h-[450rem] lg:h-[445rem] flex flex-col items-center justify-center z-10">
+    <div className="bg-image5 w-full xs:h-[325rem] sm:h-[400rem] md:h-[430rem] lg:h-[430rem] xl:h-[440rem] flex flex-col items-center justify-center z-10">
       <div className="relative xs:-translate-y-[42rem] sm:-translate-y-[44rem] md:-translate-y-[63rem] xs:space-y-4">
         {/* business plan */}
         <h1
@@ -55,7 +53,7 @@ function Content({
   `,
           }}
         >
-          UI/UX Design <br />{" "}
+          Fullstack Web Dev <br />{" "}
           <span
             style={{
               color: "#0E5D84",
@@ -78,7 +76,7 @@ function Content({
     0 0 0 #F4C66B`,
             }}
           >
-            Competition
+            Bootcamp
           </span>
         </h1>
         <button
@@ -106,19 +104,18 @@ function Content({
           About
         </span>{" "}
         <span className="text-[#D25F5F] sm:text-2xl md:text-3xl lg:text-5xl">
-          Competition
+          Bootcamp
         </span>
         <p
           className="xs:pt-2 xs:text-xs lg:text-2xl lg:pt-2"
           style={{ fontFamily: "Poppins" }}
         >
-          UI/UX Design Competition adalah bagian dari Informatics Championship
-          (IC) 2024 yang bertujuan mendorong kreativitas dan inovasi dalam
-          desain antarmuka pengguna (UI) dan pengalaman pengguna (UX). Peserta
-          ditantang untuk merancang desain aplikasi yang memudahkan interaksi,
-          meningkatkan kepuasan, serta memenuhi tujuan fungsional produk, dengan
-          mempertimbangkan estetika, aksesibilitas, responsivitas, dan
-          intuitivitas.
+          Bootcamp Fullstack Development adalah program intensif yang dirancang
+          untuk mengajarkan keterampilan pengembangan web yang penting dalam era
+          digital saat ini. Dengan fokus pada teknologi terkini seperti React
+          JS, Express JS, dan Tailwind CSS, bootcamp ini bertujuan untuk
+          membantu peserta dari berbagai latar belakang mempelajari dan
+          menguasai pengembangan website yang menarik dan fungsional.
         </p>
         <img
           src={Batu2}
@@ -157,7 +154,7 @@ function Content({
               Biaya
             </h1>
             <p className="text-xs text-center sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:py-2 py-4">
-              Free
+              Rp.60.000
             </p>
           </div>
           <div className="space-y-4">
@@ -165,28 +162,37 @@ function Content({
               className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-8 sm:px-11 xs:py-2 py-4"
               style={{ fontFamily: "Lost Island" }}
             >
-              Kategori
+              Pelaksanaan
             </h1>
             <p className="text-xs text-center sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl lg:px-8 xs:py-2 py-4">
-              Mahasiswa (Tim)
+              6, 7, 8 <br /> September 2024
             </p>
           </div>
-          <div className="space-y-4 lg:col-span-3 lg:grid lg:grid-cols-3 lg:gap-8">
-            <div className="hidden lg:block"></div>
-            <div className="space-y-4 lg:col-start-2">
-              <h1
-                className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-8 sm:px-11 xs:py-2 py-4"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                Tingkat
-              </h1>
-              <p className="text-xs text-center sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:py-2 py-4">
-                Nasional
-              </p>
-            </div>
-            <div className="hidden lg:block"></div>
-          </div>
         </div>
+      </div>
+      {/*pemateri*/}
+      <div className="xs:-translate-y-[27rem] sm:-translate-y-[47rem]">
+        <div className="translate-y-[35rem] sm:translate-y-[50rem] flex flex-col justify-center z-10 mx-auto">
+          <h1
+            className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#523D31] rounded-xl w-fit px-16 py-4 mx-auto"
+            style={{ fontFamily: "Lost Island" }}
+          >
+            Pemateri
+          </h1>
+        </div>
+        <img
+          src={Pemateri}
+          className="items-center w-[382px] md:w-[765px] h-[344px] md:h-[687px] translate-y-[33rem] sm:translate-y-[50rem]"
+        />
+        <h1
+          className="text-xs sm:text-xl md:text-base lg:text-2xl text-center text-white bg-[#7F5238] rounded-xl w-fit px-10 py-2 translate-y-[28rem] sm:translate-y-[45rem] z-20 relative mx-auto"
+          style={{ fontFamily: "Lost Island" }}
+        >
+          Pemateri
+        </h1>
+        <h1 className="text-lg sm:text-xl md:text-base lg:text-3xl font-semibold text-center text-[#7F5238] bg-[#F5F2CB] rounded-xl w-fit px-8 sm:px-16 py-4 translate-y-[27.5rem] sm:translate-y-[44rem] mx-auto">
+          Danny Dwi Cahyono
+        </h1>
       </div>
       {/* timeline */}
       <div className="xs:translate-y-[13rem] sm:translate-y-[7rem] ">
@@ -196,24 +202,23 @@ function Content({
         >
           Timeline
         </h1>
-        <div className="mx-auto relative bg-[#D7996C] w-[8.5px] sm:w-[17px] xs:h-[687px] sm:h-[1484px] xs:space-y-20 sm:space-y-44">
+        <div className="mx-auto relative bg-[#D7996C] w-[8.5px] sm:w-[17px] xs:h-[303px] sm:h-[650px] xs:space-y-20 sm:space-y-44">
           {/* timeline 1 */}
           <div className="relative bottom-1 -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.1rem] xs:py-2 sm:px-7 sm:py-2 md:px-8 text-nowrap"
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.1rem] xs:py-2 sm:px-7 sm:py-2 md:px-8 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pendaftaran & <br /> Pengumpulan Proposal
+                Pendaftaran & Pembayaran
               </h1>
             </div>
-            <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 md:top-[4.5rem] lg:left-16 lg:top-24 text-center">
+            <div className="absolute xs:left-8 xs:top-10 sm:left-16 sm:top-20 md:top-[4.5rem] lg:left-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-14 sm:py-2 lg:px-16 text-nowrap"
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-14 sm:py-2 lg:px-16 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                14 September – <br />
-                24 Oktober 2024
+                20 Agustus – <br />3 September 2024
               </h1>
             </div>
           </div>
@@ -221,37 +226,37 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 md:px-[1.85rem] text-nowrap"
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 md:px-[1.85rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumuman Semifinal
+                Pelaksanaan Day 1
               </h1>
             </div>
             <div className="absolute xs:right-8 xs:top-9 sm:right-16 sm:top-14 md:top-[3rem] lg:right-16 lg:top-16 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[3.35rem] sm:py-2 lg:px-[4rem] text-nowrap"
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[3.35rem] sm:py-2 lg:px-[4rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                31 Oktober 2024
+                6 September 2024
               </h1>
             </div>
           </div>
           {/* timeline 3 */}
-          <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
+          <div className="relative bottom-1 -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.35rem] xs:py-2 sm:px-8 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.1rem] xs:py-2 sm:px-7 sm:py-2 md:px-8 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumpulan Karya
+                Pelaksanaan Day 2
               </h1>
             </div>
-            <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-14 md:top-[3rem] lg:left-16 lg:top-16 text-center">
+            <div className="absolute xs:left-8 xs:top-10 sm:left-16 sm:top-20 md:top-[4.5rem] lg:left-16 lg:top-24 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-14 sm:py-2 lg:px-16 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                1 – 13 November 2024
+                7 September 2024
               </h1>
             </div>
           </div>
@@ -259,100 +264,24 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.3rem] xs:py-2 sm:px-10 sm:py-2 lg:px-11 text-nowrap"
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 md:px-[1.85rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumpulan Media <br /> Presentasi (PPT)
+                Pelaksanaan Day 3
               </h1>
             </div>
-            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 md:top-[4.5rem] lg:right-16 lg:top-24 text-center">
+            <div className="absolute xs:right-8 xs:top-9 sm:right-16 sm:top-14 md:top-[3rem] lg:right-16 lg:top-16 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-lg md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[3.35rem] sm:py-2 lg:px-[4rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                20 – 23 November 2024
-              </h1>
-            </div>
-          </div>
-          {/* timeline 5 */}
-          <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
-            <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-7 xs:py-2 sm:px-[3.1rem] sm:py-2 lg:px-[3.6rem] text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                Pengumuman <br /> Finalis
-              </h1>
-            </div>
-            <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 md:top-[4.5rem] lg:left-16 lg:top-24 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 md:px-8 sm:py-2 text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                20 November 2024
-              </h1>
-            </div>
-          </div>
-          {/* timeline 6 */}
-          <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
-            <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-7 xs:py-2 sm:px-[3.85rem] sm:py-2 lg:px-[4.65rem] text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                Technical <br /> Meeting
-              </h1>
-            </div>
-            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 md:top-[4.5rem] lg:right-16 lg:top-24 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 md:px-[2.15rem] sm:py-2 text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                23 November 2024
-              </h1>
-            </div>
-          </div>
-          {/* timeline 7 */}
-          <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
-            <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-10 xs:py-2 sm:px-20 sm:py-2 md:px-[4.4rem] lg:px-[5.6rem] text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                Final
-              </h1>
-            </div>
-            <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-12 lg:left-16 lg:top-16 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                24 November 2024
-              </h1>
-            </div>
-          </div>
-          {/* timeline 8 */}
-          <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
-            <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.4rem] xs:py-2 sm:px-[2.1rem] sm:py-2 text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                Pengumuman <br /> Pemenang Lomba
-              </h1>
-            </div>
-            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 md:top-[4.5rem] lg:right-16 lg:top-24 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                28 November 2024
+                8 September 2024
               </h1>
             </div>
           </div>
         </div>
       </div>
-      {/* prizepool */}
+      {/* silabus materi */}
       <div className="xs:translate-y-[29rem] sm:translate-y-[29rem]">
         <div className="mx-auto pt-20">
           <div className="w-[160px] lg:w-[240px] xl:w-[270px]  text-center mx-auto">
@@ -360,77 +289,66 @@ function Content({
               className=" md:text-xl lg:text-2xl text-white bg-[#523D31] rounded-xl  py-4 "
               style={{ fontFamily: "Lost Island" }}
             >
-              Prizepool
+              Silabus Materi
             </h1>
           </div>
           <div className="pt-8 grid grid-cols-1 md:grid-cols-3 gap-1 text-center 2xl:w-[1200px] 2xl:mx-auto gap-x-8">
-            <div className="w-[250px] md:w-[230px] lg:w-[280px] xl:w-[320px] mx-auto md:order-2">
+            <div className="w-[250px] sm:w-[320px] md:w-[230px] lg:w-[280px] xl:w-[320px] mx-auto md:order-2">
               <h1
                 className="text-base md:text-xl lg:text-2xl text-white bg-[#7F5238] rounded-xl py-2 px-1"
                 style={{ fontFamily: "Lost Island" }}
               >
-                1st Winner
+                Day 1
               </h1>
               <div className="mt-2 w-full bg-[#F5F2CB] rounded-xl p-3">
-                <img
-                  className="drop-shadow-xl h-52 xl:h-60  pt-1 mx-auto"
-                  src={goldTrophy}
-                  alt=""
-                />
-                <p className="text-base md:text-lg xl:text-2xl text-center pt-1">
-                  Uang Pembinaan
+                <p className="xs:text-xs md:text-base xl:text-2xl text-justify pt-1">
+                  ❖ Pengenalan Basic JavaScript dan Tailwind CSS
                 </p>
-                <p className="text-base md:text-lg xl:text-2xl text-center pb-1">
-                  E-Ceritificate
+                <p className="xs:text-xs md:text-base xl:text-2xl text-justify pt-1">
+                  ❖ Kegiatan Dasar-dasar JavaScript, penggunaan Tailwind CSS,
+                  pengenalan database (Supabase / MySQL/ Firebase), instalasi
+                  dan setup tools.
                 </p>
               </div>
             </div>
-            <div className="w-[250px] md:w-[230px] lg:w-[280px] xl:w-[320px] pt-4 mx-auto md:order-1">
+            <div className="w-[250px] sm:w-[320px] md:w-[230px] lg:w-[280px] xl:w-[320px] pt-4 mx-auto md:order-1">
               <h1
                 className="text-base md:text-xl lg:text-2xl text-white bg-[#7F5238] rounded-xl py-2 px-1"
                 style={{ fontFamily: "Lost Island" }}
               >
-                2nd Winner
+                Day 2
               </h1>
               <div className="mt-2 w-full bg-[#F5F2CB] rounded-xl p-3">
-                <img
-                  className="drop-shadow-xl h-52 md:h-48 xl:h-56 pt-1 mx-auto"
-                  src={silverTrophy}
-                  alt=""
-                />
-                <p className="text-base md:text-lg xl:text-2xl text-center pt-1">
-                  Uang Pembinaan
+                <p className="xs:text-xs md:text-base xl:text-2xl text-justify pt-1">
+                  ❖Backend Development dengan Express JS
                 </p>
-                <p className="text-base md:text-lg xl:text-2xl text-center pb-1">
-                  E-Ceritificate
+                <p className="xs:text-xs md:text-base xl:text-2xl text-justify pt-1">
+                  ❖ Kegiatan: Pengenalan Express JS, implementasi autentikasi,
+                  setup dan integrasi database.
                 </p>
               </div>
             </div>
-            <div className="w-[250px] md:w-[230px] lg:w-[280px] xl:w-[320px] pt-4 mx-auto md:order-2">
+            <div className="w-[250px] sm:w-[320px] md:w-[230px] lg:w-[280px] xl:w-[320px] pt-4 mx-auto md:order-2">
               <h1
                 className="text-base md:text-xl lg:text-2xl text-white bg-[#7F5238] rounded-xl py-2 px-1"
                 style={{ fontFamily: "Lost Island" }}
               >
-                3rd Winner
+                Day 3
               </h1>
               <div className="mt-2 w-full bg-[#F5F2CB] rounded-xl p-3">
-                <img
-                  className="drop-shadow-xl h-52 md:h-48 xl:h-56  pt-1 mx-auto"
-                  src={bronzeTrophy}
-                  alt=""
-                />
-                <p className="text-base md:text-lg xl:text-2xl text-center pt-1">
-                  Uang Pembinaan
+                <p className="xs:text-xs md:text-base xl:text-2xl text-justify pt-1">
+                  ❖Frontend Development dengan React JS dan Tailwind CSS
                 </p>
-                <p className="text-base md:text-lg xl:text-2xl text-center pb-1">
-                  E-Ceritificate
+                <p className="xs:text-xs md:text-base xl:text-2xl text-justify pt-1">
+                  ❖Kegiatan: Pengenalan React JS, pembuatan tampilan web,
+                  integrasi frontend dengan backend dan database.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* contact person */}
+      {/*contact person*/}
       <div className="xs:translate-y-[29rem] sm:translate-y-[35rem]">
         <div className="w-full md:w-fit h-full px-6 md:px-[8.2rem] pt-20 pb-20 md:pb-36 relative  mx-auto">
           <div className="w-[160px] lg:w-[240px] xl:w-[270px] text-center mx-auto">
@@ -455,8 +373,8 @@ function Content({
                   className="text-lg md:text-[2rem] font-semibold "
                   style={{ fontFamily: "Lost Island" }}
                 >
-                  {firstno ? firstno : "0881-5048-046"} (
-                  {firstcp ? firstcp : "Amanda"})
+                  {firstno ? firstno : "0858-5672-0449"} (
+                  {firstcp ? firstcp : "Amalia"})
                 </h1>
               </div>
             </a>
@@ -473,8 +391,8 @@ function Content({
                   className="text-lg md:text-[2rem] font-semibold "
                   style={{ fontFamily: "Lost Island" }}
                 >
-                  {secondno ? secondno : "0882-2819-9404"} (
-                  {secondcp ? secondcp : "Ahmad Daffa"})
+                  {secondno ? secondno : "0858-1132-6241"} (
+                  {secondcp ? secondcp : "Sarah Nabila"})
                 </h1>
               </div>
             </a>
@@ -501,9 +419,6 @@ function Content({
                 className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]"
               >
                 Daftar Sekarang
-              </button>
-              <button className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]">
-                Guidebook
               </button>
               <button
                 onClick={() => setopenPoster(true)}
@@ -553,4 +468,4 @@ function Content({
   );
 }
 
-export default Content;
+export default FullstackWebdev;
