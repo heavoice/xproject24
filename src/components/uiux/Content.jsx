@@ -26,11 +26,11 @@ function Content({
   const PosterModal = ({ openPoster, setopenPoster }) => {};
 
   return (
-    <div className="bg-image5 w-full xs:h-[360rem] sm:h-[455rem] md:h-[460rem] lg:h-[450rem] flex flex-col items-center justify-center z-10">
+    <div className="bg-image5 w-full xs:h-[360rem] sm:h-[455rem] md:h-[460rem] lg:h-[455rem] flex flex-col items-center justify-center z-10">
       <div className="relative xs:-translate-y-[42rem] sm:-translate-y-[44rem] md:-translate-y-[63rem] xs:space-y-4">
         {/* business plan */}
         <h1
-          className="xs:text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#E7CF7F] flex flex-col text-center sm:pb-5"
+          className="xs:text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#E7CF7F] flex flex-col text-center xs:pb-3 sm:pb-5"
           style={{
             fontFamily: "Lost Island",
             textShadow: `
@@ -192,9 +192,9 @@ function Content({
               Mahasiswa (Tim)
             </p>
           </div>
-          <div className="space-y-4 lg:col-span-3 lg:grid lg:grid-cols-3 lg:gap-8">
+          <div className="space-y-4 lg:col-span-3 lg:grid lg:grid-cols-2 lg:gap-8 lg:mx-auto">
             <div className="hidden lg:block"></div>
-            <div className="space-y-4 lg:col-start-2">
+            <div className="space-y-4 lg:col-start-1">
               <h1
                 className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-8 sm:px-11 xs:py-2 py-4"
                 style={{ fontFamily: "Lost Island" }}
@@ -203,6 +203,17 @@ function Content({
               </h1>
               <p className="text-xs text-center sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:py-2 py-4">
                 Nasional
+              </p>
+            </div>
+            <div className="space-y-4 lg:col-start-2">
+              <h1
+                className="text-xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-8 sm:px-11 xs:py-2 py-4"
+                style={{ fontFamily: "Lost Island" }}
+              >
+                Pelaksanaan (Final)
+              </h1>
+              <p className="text-xs text-center sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:py-2 py-4">
+                Offline
               </p>
             </div>
             <div className="hidden lg:block"></div>
