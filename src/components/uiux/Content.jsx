@@ -18,16 +18,15 @@ function Content({
   secondcp,
   secondno,
 }) {
-  const LinkPendaftaran = () => {
-    window.location.href = "https://unesa.me/PendaftaranDanPengumpulanUIUX";
-  };
+  const LinkPendaftaran = "https://unesa.me/PendaftaranDanPengumpulanBMC";
+  const Guidebook = "https://unesa.me/GuidebookIC2024";
 
   const [openPoster, setopenPoster] = useState(false);
 
   const PosterModal = ({ openPoster, setopenPoster }) => {};
 
   return (
-    <div className="bg-image5 w-full xs:h-[355rem] sm:h-[450rem] lg:h-[445rem] flex flex-col items-center justify-center z-10">
+    <div className="bg-image5 w-full xs:h-[360rem] sm:h-[455rem] md:h-[460rem] lg:h-[450rem] flex flex-col items-center justify-center z-10">
       <div className="relative xs:-translate-y-[42rem] sm:-translate-y-[44rem] md:-translate-y-[63rem] xs:space-y-4">
         {/* business plan */}
         <h1
@@ -81,13 +80,19 @@ function Content({
             Competition
           </span>
         </h1>
-        <button
-          onClick={LinkPendaftaran}
-          className="mx-auto transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl text-white rounded-xl border-green-600 bg-green-600 border-2 px-2 sm:px-8 md:px-9 py-1 sm:py-3 md:py-4 flex items-center hover:bg-green-900 hover:border-green-900"
-          style={{ fontFamily: "Lost Island" }}
+        <a
+          href="https://unesa.me/PendaftaranDanPengumpulanBMC"
+          target="blank"
+          rel="noopener norefferer"
         >
-          Daftar Sekarang
-        </button>
+          <button
+            onClick={() => window.open(LinkPendaftaran, "_blank")}
+            className="mx-auto transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-xl md:text-2xl text-white rounded-xl border-green-600 bg-green-600 border-2 px-2 sm:px-8 md:px-9 py-1 sm:py-3 md:py-4 flex items-center hover:bg-green-900 hover:border-green-900"
+            style={{ fontFamily: "Lost Island" }}
+          >
+            Daftar Sekarang
+          </button>
+        </a>
       </div>
       {/* overview */}
       <div className="relative xs:-translate-y-[20rem] sm:-translate-y-[13rem] md:-translate-y-[23rem] z-10">
@@ -129,6 +134,22 @@ function Content({
           className="absolute -bottom-16 xs:-right-5 sm:-bottom-20 sm:-right-12 md:-bottom-24 md:-right-14 lg:-bottom-32 lg:-right-20 xl:-bottom-40 xl:-right-24 xs:w-[100px] sm:w-[140px] md:w-[150px] lg:w-[200px] xl:w-[240px]"
         />
       </h2>
+      {/* guidebook */}
+      <div className="relative xs:-translate-y-[14.5rem] sm:-translate-y-[11.5rem] md:-translate-y-[16.5rem]">
+        <a
+          href="https://unesa.me/GuidebookIC2024"
+          target="blank"
+          rel="noopener norefferer"
+        >
+          <button
+            onClick={() => window.open(Guidebook, "_blank")}
+            className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]"
+            style={{ fontFamily: "Lost Island" }}
+          >
+            Guidebook
+          </button>
+        </a>
+      </div>
       {/* detail */}
       <div className="xs:-translate-y-[7rem] sm:-translate-y-[8rem]">
         <h1
@@ -496,15 +517,17 @@ function Content({
           >
             Gimana Tertarik? <br /> Yuk daftar!
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 justify-center lg:justify-start mt-10 ">
-              <button
-                onClick={LinkPendaftaran}
-                className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]"
+              <a
+                href="https://unesa.me/PendaftaranDanPengumpulanBMC"
+                target="blank"
               >
-                Daftar Sekarang
-              </button>
-              <button className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]">
-                Guidebook
-              </button>
+                <button
+                  onClick={() => window.open(LinkPendaftaran, "_blank")}
+                  className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#A14F3D] bg-[#A14F3D] px-4 xs:px-7 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#73372c] hover:border-[#73372c]"
+                >
+                  Daftar Sekarang
+                </button>
+              </a>
               <button
                 onClick={() => setopenPoster(true)}
                 className="transition ease-in-out whitespace-nowrap hover:-translate-y-1 hover:scale-110 duration-300 text-xs sm:text-sm md:text-base lg:text-xl xl:text-3xl text-white rounded-xl border-[#486D24] bg-[#486D24] px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-5 flex items-center justify-center hover:bg-[#293f16] hover:border-[#293f16]"
