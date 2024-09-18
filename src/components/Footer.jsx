@@ -93,7 +93,7 @@ import {
   FaYoutube,
   FaWordpress,
 } from "react-icons/fa";
-import logo from "../assets/img/logoXP.png";
+
 import logoWhite from "../assets/img/logoXP.png";
 import unesa from "../assets/img/unesa.png";
 import ti from "../assets/img/ti.png";
@@ -102,20 +102,26 @@ import pti from "../assets/img/pti.png";
 import { useLocation } from "react-router-dom";
 
 const Footer = () => {
-  const pathname = useLocation()
+  const pathname = useLocation();
   return (
-    <div className={`bg-image3 w-full h-screen translate-y-[405rem] sm:translate-y-[415rem]  ${pathname.pathname.includes('about-us')?"md:translate-y-[310rem]":"md:translate-y-[360rem] xl:translate-y-[395rem]"} `}>
+    <div
+      className={`bg-image3 w-full h-screen translate-y-[405rem] sm:translate-y-[415rem]  ${
+        pathname.pathname.includes("about-us")
+          ? "md:translate-y-[310rem]"
+          : "md:translate-y-[360rem] xl:translate-y-[395rem]"
+      } `}
+    >
       <div className="bg-image4 w-full mx-auto h-screen  translate-y-[25rem] md: lg:translate-y-[14rem] xl:translate-y-[20rem]">
         {/* Unesa Logo with Link */}
         <div className=" mx-auto px-8  md:flex  gap-4 justify-between items-center md:w-[820px] translate-y-[23.5rem] md:translate-y-[14rem]">
-          <div className=" md:flex md:absolute top-2 left-2 md:top-[21.5rem] md:left-[-4.5rem]" >
-          <img
+          <div className=" md:flex md:absolute top-2 left-2 md:top-[21.5rem] md:left-[-4.5rem]">
+            <img
               src={logoWhite}
               className=" w-10 h-10 md:w-14 md:h-14 xl:w-20 xl:h-20 m-2 md:mt-3 mx-auto"
               alt="Logo"
-              />
-              <p className="text-white  text-center">Presented by:</p>
-              </div>
+            />
+            <p className="text-white  text-center">Presented by:</p>
+          </div>
           <div className="grid grid-cols-4 justify-center md:translate-y-[14.6rem]  mt-1 md:mt-32">
             <a
               href="https://www.unesa.ac.id/"
