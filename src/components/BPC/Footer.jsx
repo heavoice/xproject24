@@ -1,6 +1,11 @@
 import { rumput, logo, unesa, ti, si, pti } from "../../assets";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaTiktok, FaInstagram, FaYoutube } from "react-icons/fa";
+
 const Footer = () => {
+  const TiktokHimti = "https://www.tiktok.com/@himtiunesa15";
+  const InstagramXproject = "https://www.instagram.com/xproject.if/";
+  const YoutubeHimti = "https://www.youtube.com/@HIMTIUNESA";
+
   return (
     <>
       <div className="xs:-mt-[10rem] sm:-mt-[12rem] md:-mt-[17rem] lg:-mt-[20rem] 2xl:-mt-[30rem]">
@@ -45,10 +50,19 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex justify-center gap-2 pt-10 md:pt-12 pr-5">
-                <FaFacebook className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px]  xl:w-12 xl:h-12 " />
-                <FaInstagram className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px]  xl:w-12 xl:h-12  " />
+                <FaTiktok
+                  onClick={() => window.open(TiktokHimti, "_blank")}
+                  className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px] xl:w-12 xl:h-12 hover:cursor-pointer"
+                />
+                <FaInstagram
+                  onClick={() => window.open(InstagramXproject, "_blank")}
+                  className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px]  xl:w-12 xl:h-12 hover:cursor-pointer"
+                />
 
-                <FaYoutube className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px]  xl:w-12 xl:h-12 " />
+                <FaYoutube
+                  onClick={() => window.open(YoutubeHimti, "_blank")}
+                  className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px]  xl:w-12 xl:h-12 hover:cursor-pointer"
+                />
               </div>
             </div>
           </div>
