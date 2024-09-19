@@ -228,7 +228,7 @@ function Content({
         >
           Timeline
         </h1>
-        <div className="mx-auto relative bg-[#D7996C] w-[8.5px] sm:w-[17px] xs:h-[687px] sm:h-[1484px] xs:space-y-20 sm:space-y-44">
+        <div className="mx-auto relative bg-[#D7996C] w-[8.5px] sm:w-[17px] xs:h-[487px] sm:h-[1054px] xs:space-y-20 sm:space-y-44">
           {/* timeline 1 */}
           <div className="relative bottom-1 -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
@@ -244,8 +244,8 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-14 sm:py-2 lg:px-16 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                14 September – <br />
-                24 Oktober 2024
+                18 September – <br />
+                26 Oktober 2024
               </h1>
             </div>
           </div>
@@ -261,10 +261,10 @@ function Content({
             </div>
             <div className="absolute xs:right-8 xs:top-9 sm:right-16 sm:top-14 md:top-[3rem] lg:right-16 lg:top-16 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[3.35rem] sm:py-2 lg:px-[4rem] text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[2.95rem] sm:py-2 lg:px-[3.65rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                31 Oktober 2024
+                6 November 2024
               </h1>
             </div>
           </div>
@@ -283,7 +283,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                1 – 13 November 2024
+                7 – 21 November 2024
               </h1>
             </div>
           </div>
@@ -291,10 +291,10 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.3rem] xs:py-2 sm:px-10 sm:py-2 lg:px-11 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.3rem] xs:py-2 sm:px-12 sm:py-2 lg:px-14 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumpulan Media <br /> Presentasi (PPT)
+                Pengumuman <br /> Finalis
               </h1>
             </div>
             <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 md:top-[4.5rem] lg:right-16 lg:top-24 text-center">
@@ -302,7 +302,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                20 – 23 November 2024
+                27 November 2024
               </h1>
             </div>
           </div>
@@ -310,10 +310,10 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-7 xs:py-2 sm:px-[3.1rem] sm:py-2 lg:px-[3.6rem] text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-7 xs:py-2 sm:px-[3.85rem] sm:py-2 lg:px-[4.45rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumuman <br /> Finalis
+                Technical <br /> Meeting
               </h1>
             </div>
             <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 md:top-[4.5rem] lg:left-16 lg:top-24 text-center">
@@ -321,7 +321,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 md:px-8 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                20 November 2024
+                29 November 2024
               </h1>
             </div>
           </div>
@@ -329,10 +329,10 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-7 xs:py-2 sm:px-[3.85rem] sm:py-2 lg:px-[4.65rem] text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-7 xs:py-2 sm:px-[2.85rem] sm:py-2 lg:px-[3.45rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Technical <br /> Meeting
+                Final <br /> & Awarding
               </h1>
             </div>
             <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 md:top-[4.5rem] lg:right-16 lg:top-24 text-center">
@@ -340,45 +340,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 md:px-[2.15rem] sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                23 November 2024
-              </h1>
-            </div>
-          </div>
-          {/* timeline 7 */}
-          <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
-            <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-10 xs:py-2 sm:px-20 sm:py-2 md:px-[4.4rem] lg:px-[5.6rem] text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                Final
-              </h1>
-            </div>
-            <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-12 lg:left-16 lg:top-16 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                24 November 2024
-              </h1>
-            </div>
-          </div>
-          {/* timeline 8 */}
-          <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
-            <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[1.4rem] xs:py-2 sm:px-[2.1rem] sm:py-2 text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                Pengumuman <br /> Pemenang Lomba
-              </h1>
-            </div>
-            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 md:top-[4.5rem] lg:right-16 lg:top-24 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                28 November 2024
+                5 Desember 2024
               </h1>
             </div>
           </div>

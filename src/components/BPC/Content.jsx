@@ -26,7 +26,7 @@ function Content({
   const PosterModal = ({ openPoster, setopenPoster }) => {};
 
   return (
-    <div className="bg-image5 w-full xs:h-[360rem] sm:h-[455rem] md:h-[460rem] lg:h-[455rem] flex flex-col items-center justify-center z-10">
+    <div className="bg-image5 w-full xs:h-[360rem] sm:h-[440rem] md:h-[440rem] lg:h-[440rem] flex flex-col items-center justify-center z-10">
       <div className="relative xs:-translate-y-[42rem] sm:-translate-y-[44rem] md:-translate-y-[63rem] xs:space-y-4">
         {/* business plan */}
         <h1
@@ -229,7 +229,7 @@ function Content({
         >
           Timeline
         </h1>
-        <div className="mx-auto relative bg-[#D7996C] w-[8.5px] sm:w-[17px] xs:h-[687px] sm:h-[1484px] xs:space-y-20 sm:space-y-44">
+        <div className="mx-auto relative bg-[#D7996C] w-[8.5px] sm:w-[17px] xs:h-[588px] sm:h-[1264px] xs:space-y-20 sm:space-y-44">
           {/* timeline 1 */}
           <div className="relative bottom-1 -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
@@ -245,8 +245,8 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[2.1rem] sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                14 September – <br />
-                20 Oktober 2024
+                18 September – <br />
+                26 Oktober 2024
               </h1>
             </div>
           </div>
@@ -254,10 +254,10 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-6 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[2.15rem] xs:py-2 sm:px-14 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumuman Lolos <br /> Semifinal
+                Pengumuman <br /> Semifinal
               </h1>
             </div>
             <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
@@ -265,7 +265,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-7 xs:py-2 sm:px-[2.35rem] sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                31 Oktober 2024
+                6 November 2024
               </h1>
             </div>
           </div>
@@ -284,7 +284,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-[2.15rem] sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                1 – 9 November 2024
+                7 – 14 November 2024
               </h1>
             </div>
           </div>
@@ -303,7 +303,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-4 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                10 – 16 November 2024
+                15 – 21 November 2024
               </h1>
             </div>
           </div>
@@ -311,10 +311,10 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-7 xs:py-2 sm:px-[3.85rem] sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumuman 10 Besar <br /> Finalis
+                Pengumuman <br /> Finalis
               </h1>
             </div>
             <div className="absolute xs:left-8 xs:top-12 sm:left-16 sm:top-20 lg:left-16 lg:top-24 text-center">
@@ -322,7 +322,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-10 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                20 November 2024
+                27 November 2024
               </h1>
             </div>
           </div>
@@ -330,10 +330,10 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-7 xs:py-2 sm:px-10 sm:py-2 lg:px-11 text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-[2.15rem] xs:py-2 sm:px-[3.85rem] sm:py-2 lg:px-[4.35rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Pengumpulan Media <br /> Presentasi (PPT)
+                Technical <br /> Meeting
               </h1>
             </div>
             <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
@@ -341,7 +341,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-[1.35rem] xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                22 – 25 November 2024
+                29 November 2024
               </h1>
             </div>
           </div>
@@ -349,10 +349,10 @@ function Content({
           <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
             <div className="absolute xs:left-8 xs:top-0 sm:left-16 sm:top-0 text-center">
               <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-10 xs:py-2 sm:px-20 sm:py-2 md:px-[4.4rem] lg:px-[5.6rem] text-nowrap"
+                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-4 xs:py-2 sm:px-5 sm:py-2 md:px-[1.5rem] lg:px-[1.2rem] text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                Final
+                Final & Awarding
               </h1>
             </div>
             <div className="absolute xs:left-8 xs:top-9 sm:left-16 sm:top-14 lg:left-16 lg:top-14 text-center">
@@ -360,26 +360,7 @@ function Content({
                 className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-5 xs:py-2 sm:px-7 sm:py-2 text-nowrap"
                 style={{ fontFamily: "Lost Island" }}
               >
-                26 November 2024
-              </h1>
-            </div>
-          </div>
-          {/* timeline 8 */}
-          <div className="relative -mx-1 sm:-mx-2 bg-[#7F5238] w-[16px] h-[16px] sm:w-[32px] sm:h-[32px] rounded-full">
-            <div className="absolute xs:right-8 xs:top-0 sm:right-16 sm:top-0 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-white bg-[#7F5238] rounded-xl xs:px-5 xs:py-2 sm:px-6 sm:py-2 text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                Pengumuman <br /> Pemenang Lomba
-              </h1>
-            </div>
-            <div className="absolute xs:right-8 xs:top-12 sm:right-16 sm:top-20 lg:right-16 lg:top-24 text-center">
-              <h1
-                className="text-4xs sm:text-xl md:text-base lg:text-2xl text-[#7F5238] bg-[#F5F2CB] rounded-xl xs:px-[1.35rem] xs:py-2 sm:px-7 sm:py-2 text-nowrap"
-                style={{ fontFamily: "Lost Island" }}
-              >
-                1 Desember 2024
+                5 Desember 2024
               </h1>
             </div>
           </div>
