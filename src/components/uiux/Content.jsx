@@ -26,7 +26,7 @@ function Content({
   const PosterModal = ({ openPoster, setopenPoster }) => {};
 
   return (
-    <div className="bg-image5 w-full xs:h-[360rem] sm:h-[455rem] md:h-[460rem] lg:h-[455rem] flex flex-col items-center justify-center z-10">
+    <div className="bg-image5 w-full xs:h-[350rem] sm:h-[425rem] md:h-[425rem] lg:h-[425rem] xl:h-[430rem] flex flex-col items-center justify-center z-10">
       <div className="relative xs:-translate-y-[42rem] sm:-translate-y-[44rem] md:-translate-y-[63rem] xs:space-y-4">
         {/* business plan */}
         <h1
