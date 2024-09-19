@@ -49,10 +49,19 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex justify-center gap-2 pt-10 md:pt-12 pr-5">
-                <FaFacebook className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px]  xl:w-12 xl:h-12 " />
-                <FaInstagram className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px]  xl:w-12 xl:h-12  " />
+                <FaTiktok
+                  onClick={() => window.open(TiktokHimti, "_blank")}
+                  className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px] xl:w-12 xl:h-12 hover:cursor-pointer"
+                />
+                <FaInstagram
+                  onClick={() => window.open(InstagramXproject, "_blank")}
+                  className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px]  xl:w-12 xl:h-12 hover:cursor-pointer"
+                />
 
-                <FaYoutube className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px]  xl:w-12 xl:h-12 " />
+                <FaYoutube
+                  onClick={() => window.open(YoutubeHimti, "_blank")}
+                  className="text-white hover:text-gray-400 transition duration-300 w-[23px] h-[23px] md:w-[38px] md:h-[38px]  xl:w-12 xl:h-12 hover:cursor-pointer"
+                />
               </div>
             </div>
           </div>
