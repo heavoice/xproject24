@@ -1,6 +1,10 @@
 import { rumput, logo, unesa, ti, si, pti } from "../../assets";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaTiktok, FaInstagram, FaYoutube } from "react-icons/fa";
 const Footer = () => {
+  const TiktokHimti = "https://www.tiktok.com/@himtiunesa15";
+  const InstagramXproject = "https://www.instagram.com/xproject.if/";
+  const YoutubeHimti = "https://www.youtube.com/@HIMTIUNESA";
+  
   return (
     <>
       <div>
