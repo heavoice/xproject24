@@ -18,7 +18,8 @@ function Content({
   secondcp,
   secondno,
 }) {
-  const LinkPendaftaran = "https://unesa.me/PendaftaranDanPengumpulanBMC";
+  const LinkPendaftaran =
+    "https://docs.google.com/forms/d/1zpzuL41Q9lNTrrg8g4vov5ZywUl2pIQPdr87xOj1k8I/viewform?edit_requested=true";
   const Guidebook = "https://unesa.me/GuidebookIC2024";
 
   const [openPoster, setopenPoster] = useState(false);
@@ -81,7 +82,7 @@ function Content({
           </span>
         </h1>
         <a
-          href="https://unesa.me/PendaftaranDanPengumpulanBMC"
+          href="https://docs.google.com/forms/d/1zpzuL41Q9lNTrrg8g4vov5ZywUl2pIQPdr87xOj1k8I/viewform?edit_requested=true"
           target="blank"
           rel="noopener norefferer"
         >
@@ -491,7 +492,7 @@ function Content({
             Gimana Tertarik? <br /> Yuk daftar!
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 justify-center lg:justify-start mt-10 ">
               <a
-                href="https://unesa.me/PendaftaranDanPengumpulanBMC"
+                href="https://docs.google.com/forms/d/1zpzuL41Q9lNTrrg8g4vov5ZywUl2pIQPdr87xOj1k8I/viewform?edit_requested=true"
                 target="blank"
               >
                 <button
